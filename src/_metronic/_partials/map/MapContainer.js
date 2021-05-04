@@ -65,7 +65,7 @@ function MapContainer(props) {
             center: { lat: lat, lng: lng},
             visibleClients: true,
             disableDefaultUI: true,
-            getClickableIcons: false
+            cllickableIcons: false,
         })
     }
  const popover = (
@@ -92,7 +92,7 @@ const popoverMap = (
           defaultCenter={mapProps.center}
           defaultZoom = {mapProps.zoom}
           zoom={mapProps.zoom}
-          getClickableIcons={mapProps.getClickableIcons}
+          cllickableIcons={mapProps.cllickableIcons}
           disableDefaultUI={mapProps.disableDefaultUI}
         >
 

@@ -42,3 +42,6 @@ export { TilesWidget11 } from "./tiles/TilesWidget11";
 export { TilesWidget12 } from "./tiles/TilesWidget12";
 export { TilesWidget13 } from "./tiles/TilesWidget13";
 export { TilesWidget14 } from "./tiles/TilesWidget14";
+
+// Profile
+export { ProfileCard } from "./profile/ProfileCard";

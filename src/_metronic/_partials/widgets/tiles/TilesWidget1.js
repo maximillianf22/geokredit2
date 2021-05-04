@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import SVG from "react-inlinesvg";
 import { Dropdown } from "react-bootstrap";
 import objectPath from "object-path";
@@ -8,7 +8,13 @@ import { toAbsoluteUrl } from "../../../_helpers";
 import { DropdownCustomToggler, DropdownMenu4 } from "../../dropdowns";
 import { useHtmlClassService } from "../../../layout";
 
-export function TilesWidget1({ className, chartColor = "danger" }) {
+export function TilesWidget1({ className, chartColor = "success" }) {
+  const tabs = {
+    tab1: "kt_tab_pane_3_1",
+    tab2: "kt_tab_pane_3_2",
+    tab3: "kt_tab_pane_3_3",
+  };
+  const [activeTab, setActiveTab] = useState(tabs.tab1);
   const uiService = useHtmlClassService();
   const layoutProps = useMemo(() => {
     return {
@@ -55,24 +61,48 @@ export function TilesWidget1({ className, chartColor = "danger" }) {
         <div className="card-header border-0 pt-5">
           <div className="card-title">
             <div className="card-label">
-              <div className="font-weight-bolder">Weekly Sales Stats</div>
-              <div className="font-size-sm text-muted mt-2">890,344 Sales</div>
+              <div className="font-weight-bolder">Oficina Buenavista</div>
+              <div className="font-size-sm text-muted mt-2">Barranquilla</div>
             </div>
           </div>
           <div className="card-toolbar">
-            <Dropdown className="dropdown-inline" alignRight>
-              <Dropdown.Toggle
-                className="btn btn-clean btn-hover-light-primary btn-sm btn-icon"
-                variant="transparent"
-                id="dropdown-toggle-top"
-                as={DropdownCustomToggler}
-              >
-                <i className="ki ki-bold-more-hor" />
-              </Dropdown.Toggle>
-              <Dropdown.Menu className="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-                <DropdownMenu4 />
-              </Dropdown.Menu>
-            </Dropdown>
+          <div className="card-toolbar tb-nav bg-secondary rounded">
+            <ul className="nav nav-pills nav-pills-sm nav-dark-75">
+              <li className="nav-item">
+                <a
+                  className={`nav-link py-2 px-4 ${activeTab === tabs.tab1 &&
+                    "active"}`}
+                  data-toggle="tab"
+                  href={`#${tabs.tab1}`}
+                  onClick={() => setActiveTab(tabs.tab1)}
+                >
+                  Mes
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className={`nav-link py-2 px-4 ${activeTab === tabs.tab2 &&
+                    "active"}`}
+                  data-toggle="tab"
+                  href={`#${tabs.tab2}`}
+                  onClick={() => setActiveTab(tabs.tab2)}
+                >
+                  Semana
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className={`nav-link py-2 px-4 ${activeTab === tabs.tab3 &&
+                    "active"}`}
+                  data-toggle="tab"
+                  href={`#${tabs.tab3}`}
+                  onClick={() => setActiveTab(tabs.tab3)}
+                >
+                  Dia
+                </a>
+              </li>
+            </ul>
+          </div>
           </div>
         </div>
         {/* end::Header */}
@@ -95,27 +125,24 @@ export function TilesWidget1({ className, chartColor = "danger" }) {
                 <div className="symbol symbol-50 symbol-light mr-3 flex-shrink-0">
                   <div className="symbol-label">
                     <span className="svg-icon">
-                      <SVG
-                        className=" h-50"
-                        src={toAbsoluteUrl("/media/svg/misc/006-plurk.svg")}
-                      ></SVG>
+                      <i className="fas fa-user"></i>
                     </span>
                   </div>
                 </div>
                 <div>
                   <a
                     href="#"
-                    className="font-size-h6 text-dark-75 text-hover-primary font-weight-bolder"
+                    className="font-size-h6 text-primary text-hover-dark font-weight-bolder"
                   >
-                    Top Authors
+                    Asesores
                   </a>
                   <div className="font-size-sm text-muted font-weight-bold mt-1">
-                    Ricky Hunt, Sandra Trepp
+                    105,000,000 colocados
                   </div>
                 </div>
               </div>
-              <div className="label label-light label-inline font-weight-bold text-dark-50 py-4 px-3 font-size-base">
-                +105$
+              <div className="label label-light label-inline font-weight-bold text-dark-50 py-4 px-3 h6">
+                20
               </div>
             </div>
             {/* end::Item */}
@@ -126,27 +153,24 @@ export function TilesWidget1({ className, chartColor = "danger" }) {
                 <div className="symbol symbol-50 symbol-light mr-3 flex-shrink-0">
                   <div className="symbol-label">
                     <span className="svg-icon">
-                      <SVG
-                        className=" h-50"
-                        src={toAbsoluteUrl("/media/svg/misc/015-telegram.svg")}
-                      ></SVG>
+                      <i className="fas fa-chart-bar"></i>
                     </span>
                   </div>
                 </div>
                 <div>
                   <a
                     href="#"
-                    className="font-size-h6 text-dark-75 text-hover-primary font-weight-bolder"
+                    className="font-size-h6 text-primary text-hover-dark font-weight-bolder"
                   >
-                    Bestsellers
+                    Meta Mensual
                   </a>
                   <div className="font-size-sm text-muted font-weight-bold mt-1">
-                    Pitstop Email Marketing
+                    $150,000,000
                   </div>
                 </div>
               </div>
-              <div className="label label-light label-inline font-weight-bold text-dark-50 py-4 px-3 font-size-base">
-                +60$
+              <div className="label label-light label-inline font-weight-bold text-dark-50 py-4 px-3 h6">
+                60%
               </div>
             </div>
             {/* end::Item */}
@@ -157,27 +181,24 @@ export function TilesWidget1({ className, chartColor = "danger" }) {
                 <div className="symbol symbol-50 symbol-light mr-3 flex-shrink-0">
                   <div className="symbol-label">
                     <span className="svg-icon">
-                      <SVG
-                        className=" h-50"
-                        src={toAbsoluteUrl("/media/svg/misc/003-puzzle.svg")}
-                      ></SVG>
+                      <i className="fas fa-percent"></i> 
                     </span>
                   </div>
                 </div>
                 <div>
                   <a
                     href="#"
-                    className="font-size-h6 text-dark-75 text-hover-primary font-weight-bolder"
+                    className="font-size-h6 text-primary text-hover-dark font-weight-bolder"
                   >
-                    Top Engagement
+                    Efectividad
                   </a>
                   <div className="font-size-sm text-muted font-weight-bold mt-1">
-                    KT.com solution provider
+                    en el ultimo año
                   </div>
                 </div>
               </div>
-              <div className="label label-light label-inline font-weight-bold text-dark-50 py-4 px-3 font-size-base">
-                +75$
+              <div className="label label-light label-inline font-weight-bold text-dark-50 py-4 px-3 h6">
+                90%
               </div>
             </div>
             {/* end::Item */}
@@ -195,7 +216,7 @@ function getChartOption(layoutProps) {
   const options = {
     series: [
       {
-        name: "Net Profit",
+        name: "Creditos colocados",
         data: [20, 22, 30, 28, 25, 26, 30, 28, 22, 24, 25, 35],
       },
     ],
@@ -241,18 +262,18 @@ function getChartOption(layoutProps) {
     },
     xaxis: {
       categories: [
-        "Jan",
+        "Ene",
         "Feb",
         "Mar",
-        "Apr",
+        "Abr",
         "May",
         "Jun",
         "Jul",
-        "Aug",
+        "Ago",
         "Sep",
         "Oct",
         "Nov",
-        "Dec",
+        "Dic",
       ],
       axisBorder: {
         show: false,
@@ -327,7 +348,7 @@ function getChartOption(layoutProps) {
       },
       y: {
         formatter: function(val) {
-          return "$" + val + " thousands";
+          return  val;
         },
       },
     },
