@@ -28,7 +28,7 @@ export default function ModalRoutes({ show, handleClose }) {
             {lat: 4.619802, lng: -74.097960}
           ],
           strokeColor: '#add8e6',
-          strokeWeight: 4,
+          strokeWeight: 6,
           strokeOpacity: 1,
         });
         snappedPolyline.setMap(map);
