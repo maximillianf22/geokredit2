@@ -10,6 +10,7 @@ import asesorInactive from './icons/asesor-inactive.svg';
 
 import ModalCalendar from './ModalCalendar';
 import ModalPerfil from './ModalPerfil';
+import ModalAsesor from './ModalAsesor';
 import ModalOficina from './ModalOficina';
 import ModalRoutes from './ModalRoutes';
 import InfoWindowCustom from './InfoWindow';
@@ -53,6 +54,10 @@ function MapContainer(props) {
   const handleShowModalOficina = () => setShowModalOficina(true)
   const handleCloseModalOficina = () => setShowModalOficina(false)
 
+  const [showModalAsesor, setShowModalAsesor] = useState(false)
+  const handleShowModalAsesor = () => setShowModalAsesor(true)
+  const handleCloseModalAsesor = () => setShowModalAsesor(false)
+
   const [showModalRoutes, setShowModalRoutes] = useState(false)
   const handleShowModalRoutes = () => setShowModalRoutes(true)
   const handleCloseModalRoutes = () => setShowModalRoutes(false)
@@ -77,7 +82,8 @@ function MapContainer(props) {
     <Popover id="popover-basic" style={{ position: 'fixed' }}>
       <Popover.Content>
         <InfoWindowCustom handleShowModalCalendar={handleShowModalCalendar}
-          handleShowModalPerfil={handleShowModalPerfil} handleShowModalRoutes = {handleShowModalRoutes}/>
+          handleShowModalPerfil={handleShowModalPerfil} handleShowModalRoutes = {handleShowModalRoutes}
+          handleShowModalAsesor = {handleShowModalAsesor}/>
       </Popover.Content>
     </Popover>);
 
@@ -154,6 +160,7 @@ function MapContainer(props) {
       <ModalPerfil show={showModalPerfil} handleClose={handleCloseModalPerfil} />
       <ModalOficina show={showModalOficina} handleClose={handleCloseModalOficina} />
       <ModalRoutes show={showModalRoutes} handleClose={handleCloseModalRoutes} />
+      <ModalAsesor show = {showModalAsesor} handleClose = {handleCloseModalAsesor}/>
     </GoogleMapReact>
   )
 }

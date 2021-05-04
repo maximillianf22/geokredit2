@@ -10,7 +10,7 @@ export default function ModalPerfil({show, handleClose}){
           <Modal.Title>Perfil</Modal.Title>
         </Modal.Header>
         <Modal.Body className="p-0">
-           <ProfileCard></ProfileCard>
+           <ProfileCard ></ProfileCard>
         </Modal.Body>
       </Modal>
       )

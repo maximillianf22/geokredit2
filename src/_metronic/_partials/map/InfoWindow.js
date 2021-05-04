@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function InfoWindowCustom({handleShowModalCalendar, handleShowModalRoutes, handleShowModalPerfil}) {
+function InfoWindowCustom({handleShowModalCalendar, handleShowModalAsesor, handleShowModalRoutes, handleShowModalPerfil}) {
 	return(
 		<div className = "row px-3">
       <div className = "col-md-12 mb-4">
@@ -33,7 +33,7 @@ function InfoWindowCustom({handleShowModalCalendar, handleShowModalRoutes, handl
           </button>
         </div>
         <div className = "col-md-3">
-          <button className = "btn btn-sm btn-light-primary" >
+          <button className = "btn btn-sm btn-light-primary" onClick={handleShowModalAsesor}>
             <i className = "fa fa-expand-arrows-alt p-0"></i>
           </button>
         </div>
