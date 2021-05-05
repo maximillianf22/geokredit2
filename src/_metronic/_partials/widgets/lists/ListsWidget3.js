@@ -63,11 +63,12 @@ export function ListsWidget3({ className }) {
                 href="#"
                 className="text-primary text-hover-dark font-size-lg"
               >
-                Alejandro Fernandez <small className="text-dark">E</small>
+                Alejandro Fernandez 
               </a>
               <span className="text-muted lh-1">
                 $10,000,000 <small>Colocados</small> <br/>
-                Barranquilla - 56 <small>Visitas</small>
+                Barranquilla - 56 <small>Visitas</small> <br/>
+                Junior
               </span>
             </div>
             <div className="d-flex flex-column w-50 mr-2">
@@ -106,11 +107,12 @@ export function ListsWidget3({ className }) {
                 href="#"
                 className="text-primary text-hover-dark font-size-lg"
               >
-                Alejandro Fernandez <small className="text-dark">E</small>
+                Alejandro Fernandez 
               </a>
               <span className="text-muted lh-1">
                 $10,000,000 <small>Colocados</small> <br/>
-                Barranquilla - 56 <small>Visitas</small>
+                Barranquilla - 56 <small>Visitas</small> <br/>
+                Junior
               </span>
             </div>
             <div className="d-flex flex-column w-50 mr-2">
@@ -149,11 +151,12 @@ export function ListsWidget3({ className }) {
                 href="#"
                 className="text-primary text-hover-dark font-size-lg"
               >
-                Alejandro Fernandez <small className="text-dark">G</small>
+                Alejandro Fernandez 
               </a>
               <span className="text-muted lh-1">
                 $10,000,000 <small>Colocados</small> <br/>
-                Barranquilla - 56 <small>Visitas</small>
+                Barranquilla - 56 <small>Visitas</small> <br/>
+                Gold
               </span>
             </div>
             <div className="d-flex flex-column w-50 mr-2">
@@ -192,11 +195,12 @@ export function ListsWidget3({ className }) {
                 href="#"
                 className="text-primary text-hover-dark font-size-lg"
               >
-                Alejandro Fernandez <small className="text-dark">G</small>
+                Alejandro Fernandez 
               </a>
               <span className="text-muted lh-1">
                 $10,000,000 <small>Colocados</small> <br/>
-                Barranquilla - 56 <small>Visitas</small>
+                Barranquilla - 56 <small>Visitas</small> <br/>
+                Gold
               </span>
             </div>
             <div className="d-flex flex-column w-50 mr-2">
@@ -235,11 +239,12 @@ export function ListsWidget3({ className }) {
                 href="#"
                 className="text-primary text-hover-dark font-size-lg"
               >
-                Alejandro Fernandez <small className="text-dark">J</small>
+                Alejandro Fernandez 
               </a>
               <span className="text-muted lh-1">
                 $10,000,000 <small>Colocados</small> <br/>
-                Barranquilla - 56 <small>Visitas</small>
+                Barranquilla - 56 <small>Visitas</small> <br/>
+                Elite
               </span>
             </div>
             <div className="d-flex flex-column w-50 mr-2">
