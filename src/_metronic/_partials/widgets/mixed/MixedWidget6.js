@@ -1,9 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useMemo } from "react";
-import { Dropdown } from "react-bootstrap";
 import objectPath from "object-path";
 import ApexCharts from "apexcharts";
-import { DropdownCustomToggler, DropdownMenu2 } from "../../dropdowns";
 import { useHtmlClassService } from "../../../layout";
 
 export function MixedWidget6({ className, chartColor = "danger" }) {
@@ -140,6 +138,10 @@ function getChartOption(layoutProps) {
         name: "Colocados",
         data: [40, 70, 80, 60, 50, 65, 60],
       },
+      {
+        name: "Radicados",
+        data: [50, 40, 60, 30, 60, 75, 50],
+      },
     ],
     chart: {
       type: "bar",
@@ -154,7 +156,7 @@ function getChartOption(layoutProps) {
     plotOptions: {
       bar: {
         horizontal: false,
-        columnWidth: ["30%"],
+        columnWidth: ["50%"],
         endingShape: "rounded",
       },
     },

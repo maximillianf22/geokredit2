@@ -109,6 +109,13 @@ body {
   height: 455px !important;
 }
 
+.tab-position {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  z-index: 9999999;
+}
+
 .nav-map {
   position: absolute;
   top: 15px !important;

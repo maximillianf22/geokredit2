@@ -23,38 +23,12 @@ export function Footer() {
         <div className="text-dark order-2 order-md-1">
           <span className="text-muted font-weight-bold mr-2">{today.toString()}</span> &copy;{" "}
           <a
-            href=""
+            href="https://www.developapp.co/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-dark-75 text-hover-primary"
           >
-            Kredit
-          </a>
-        </div>
-        <div className="nav nav-dark order-1 order-md-2">
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-link pr-3 pl-0"
-          >
-            Acerca
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-link px-3"
-          >
-            Equipo
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-link pl-3 pr-0"
-          >
-            Contacto
+            Desarrollado por Developapp.
           </a>
         </div>
       </div>
