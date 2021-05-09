@@ -98,7 +98,7 @@ function MapContainer(props) {
       defaultZoom={mapProps.zoom}
       zoom={mapProps.zoom}
       cllickableIcons={mapProps.cllickableIcons}
-      disableDefaultUI={mapProps.disableDefaultUI}
+      disableDefaultUI={true}
     >
 
       <div lat={4.60971} lng={-74.08175} onClick={() => handleClickMarker(4.60971, -74.08175)} >
