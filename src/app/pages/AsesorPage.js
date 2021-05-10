@@ -1,13 +1,18 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { toAbsoluteUrl } from "../../_metronic/_helpers";
 import SVG from "react-inlinesvg";
 import ModalCreate from '../../_metronic/_partials/asesor/ModalCreate'
+import ModalEdit from '../../_metronic/_partials/asesor/ModalEdit'
+
 
 export default function AsesorPage() {
     const [showModalCreate, setShowModalCreate] = useState(false);
-
     const handleCloseModalCreate = () => setShowModalCreate(false);
     const handleShowModalCreate = () => setShowModalCreate(true);
+
+    const [showModalEdit, setShowModalEdit] = useState(false);
+    const handleCloseModalEdit = () => setShowModalEdit(false);
+    const handleShowModalEdit = () => setShowModalEdit(true);
 
     return (
         <div className="row">
@@ -17,7 +22,7 @@ export default function AsesorPage() {
                         <div className="d-flex justify-content-md-between flex-sm-column flex-md-row">
                             <h2>Asesor</h2>
                             <div>
-                                <button className="btn btn-primary btn-block" onClick = {handleShowModalCreate}>
+                                <button className="btn btn-primary btn-block" onClick={handleShowModalCreate}>
                                     <i className="fa fa-plus mr-2"></i>Crear
                                 </button>
                             </div>
@@ -36,6 +41,7 @@ export default function AsesorPage() {
                                         <th className="text-center">Fecha de ingreso</th>
                                         <th className="text-center">Zona</th>
                                         <th className="text-center">Gerente de zona</th>
+                                        <th className="text-center"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -51,7 +57,7 @@ export default function AsesorPage() {
                                             </div>
                                         </td>
                                         <td className=" text-center">
-                                    
+
                                             <span className="text-dark font-size-md font-weight-bolder d-block">
                                                 Jaime Barrios</span>
                                         </td>
@@ -74,13 +80,26 @@ export default function AsesorPage() {
                                         </td>
                                         <td className="text-center">
                                             <span className="font-weight-bold">
-                                            Zona x
+                                                Zona x
                     </span>
                                         </td>
                                         <td className="text-center">
                                             <span className="font-weight-bold">
                                                 Maximilian Fernandez
                     </span>
+                                        </td>
+                                        <td className="text-center">
+                                            <span className="d-flex justify-content-md-center flex-md-row flex-sm-column px-md-5">
+                                                <button className="btn btn-primary btn-sm mr-md-2 mt-sm-2" onClick={handleShowModalEdit}>
+                                                    <i className="fa fa-edit"></i>
+                                                </button>
+                                                <button className="btn btn-info btn-sm mr-md-2 mt-sm-2">
+                                                    <i className="fa fa-eye"></i>
+                                                </button>
+                                                <button className="btn btn-danger btn-sm mt-sm-2">
+                                                    <i className="fa fa-minus"></i>
+                                                </button>
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -95,7 +114,7 @@ export default function AsesorPage() {
                                             </div>
                                         </td>
                                         <td className=" text-center">
-                                    
+
                                             <span className="text-dark font-size-md font-weight-bolder d-block">
                                                 Jaime Barrios</span>
                                         </td>
@@ -118,7 +137,7 @@ export default function AsesorPage() {
                                         </td>
                                         <td className="text-center">
                                             <span className="font-weight-bold">
-                                            Zona x
+                                                Zona x
                     </span>
                                         </td>
                                         <td className="text-center">
@@ -126,12 +145,26 @@ export default function AsesorPage() {
                                                 Maximilian Fernandez
                     </span>
                                         </td>
+                                        <td className="text-center">
+                                            <span className="d-flex justify-content-md-center flex-md-row flex-sm-column px-md-5">
+                                                <button className="btn btn-primary btn-sm mr-md-2 mt-sm-2" onClick={handleShowModalEdit}>
+                                                    <i className="fa fa-edit"></i>
+                                                </button>
+                                                <button className="btn btn-info btn-sm mr-md-2 mt-sm-2">
+                                                    <i className="fa fa-eye"></i>
+                                                </button>
+                                                <button className="btn btn-danger btn-sm mt-sm-2">
+                                                    <i className="fa fa-minus"></i>
+                                                </button>
+                                            </span>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    <ModalCreate show={showModalCreate} handleClose={handleCloseModalCreate}></ModalCreate>
+                    <ModalCreate show={showModalCreate} handleClose={handleCloseModalCreate} />
+                    <ModalEdit show = {showModalEdit} handleClose={handleCloseModalEdit}/>  
                 </div>
             </div>
         </div>
