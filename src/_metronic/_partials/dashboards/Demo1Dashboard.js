@@ -68,7 +68,7 @@ export function Demo1Dashboard() {
                     <Nav.Link className="py-2 px-4" eventKey="asesores">Asesores</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link className="py-2 px-4" eventKey="gerentes">Gerentes</Nav.Link>
+                    <Nav.Link className="py-2 px-4" eventKey="gerentes">Directores</Nav.Link>
                   </Nav.Item>
                 </Nav>
               </div>
