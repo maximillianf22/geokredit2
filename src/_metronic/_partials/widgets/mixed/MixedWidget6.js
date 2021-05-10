@@ -1,9 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useMemo } from "react";
-import { Dropdown } from "react-bootstrap";
 import objectPath from "object-path";
 import ApexCharts from "apexcharts";
-import { DropdownCustomToggler, DropdownMenu2 } from "../../dropdowns";
 import { useHtmlClassService } from "../../../layout";
 
 export function MixedWidget6({ className, chartColor = "danger" }) {
@@ -65,12 +63,12 @@ export function MixedWidget6({ className, chartColor = "danger" }) {
           <div
             id="kt_mixed_widget_6_chart"
             data-color={chartColor}
-            style={{ height: "400px" }}
+            style={{ height: "450px" }}
           />
           {/* end::Chart */}
 
           {/* begin::Stats */}
-          <div className="card-spacer bg-white card-rounded flex-grow-1 my-auto">
+          <div className="card-spacer bg-white card-rounded flex-grow-1 my-aut mt-5x">
             {/* begin::Row */}
             <div className="row m-0">
               <div className="col px-4 py-6 mr-8">
@@ -140,10 +138,14 @@ function getChartOption(layoutProps) {
         name: "Colocados",
         data: [40, 70, 80, 60, 50, 65, 60],
       },
+      {
+        name: "Radicados",
+        data: [50, 40, 60, 30, 60, 75, 50],
+      },
     ],
     chart: {
       type: "bar",
-      height: "400px",
+      height: "450px",
       toolbar: {
         show: false,
       },
@@ -154,7 +156,7 @@ function getChartOption(layoutProps) {
     plotOptions: {
       bar: {
         horizontal: false,
-        columnWidth: ["30%"],
+        columnWidth: ["50%"],
         endingShape: "rounded",
       },
     },

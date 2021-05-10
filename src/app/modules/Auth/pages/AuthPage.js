@@ -85,6 +85,7 @@ export function AuthPage() {
                   path="/auth/forgot-password"
                   component={ForgotPassword}
                 />
+                <Redirect from="/auth/login" exact={true} to="/auth/login" />
                 <Redirect from="/auth" exact={true} to="/auth/login" />
                 <Redirect to="/auth/login" />
               </Switch>

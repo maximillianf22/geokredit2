@@ -1,8 +1,8 @@
 {
-    "name": "demo1",
+    "name": "geokredit",
     "version": "7.2.7",
-    "private": true,
-    "homepage": "/metronic/react/demo1",
+    "private": false,
+    "homepage": "http://demo-geokredit.developapp.co/",
     "scripts": {
         "start": "react-scripts start -o",
         "build": "react-scripts build",

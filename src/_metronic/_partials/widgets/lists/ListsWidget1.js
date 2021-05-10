@@ -64,13 +64,31 @@ export function ListsWidget1({ className }) {
                 Oficina Barranquilla
               </a>
               <span className="text-muted lh-1">
-                30 Asesores <br/>
-                Marcos Barrios GZ
+                Lina Negrete  <small>Dir.</small> <br/>
+                Marcos Barrios <small>Ger.</small> <br/>
+                Zona Principal
               </span>
             </div>
-            <span className="label label-lg label-light-dark label-inline font-weight-bold py-4">
-                  97%
-            </span>
+            <div className="d-flex flex-column w-50 mr-2">
+              <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
+                <span className="text-muted mr-2 font-size-sm">
+                  Radicados
+                </span>
+                <span className="text-dark s font-size-sm font-weight-bold">
+                  65% (2)
+                </span>
+              </div>
+              <div className="progress progress-xs w-100">
+                <div
+                  className="progress-bar bg-success"
+                  role="progressbar"
+                  style={{ width: "65%" }}
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
           </div>
 
           <div className="d-flex align-items-center mb-10">
@@ -89,13 +107,31 @@ export function ListsWidget1({ className }) {
                 Oficina Bogota
               </a>
               <span className="text-muted lh-1">
-                30 Asesores <br/>
-                Marcos Barrios GZ
+                Lina Negrete  <small>Dir.</small> <br/>
+                Marcos Barrios <small>Ger.</small> <br/>
+                Zona Principal
               </span>
             </div>
-            <span className="label label-lg label-light-dark label-inline font-weight-bold py-4">
-                  97%
-            </span>
+            <div className="d-flex flex-column w-50 mr-2">
+              <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
+                <span className="text-muted mr-2 font-size-sm">
+                  Radicados
+                </span>
+                <span className="text-dark s font-size-sm font-weight-bold">
+                  65% (2)
+                </span>
+              </div>
+              <div className="progress progress-xs w-100">
+                <div
+                  className="progress-bar bg-success"
+                  role="progressbar"
+                  style={{ width: "65%" }}
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
           </div>
           <div className="d-flex align-items-center mb-10">
             <div className="symbol symbol-40 symbol-light-success mr-5">
@@ -114,14 +150,31 @@ export function ListsWidget1({ className }) {
                 Oficina Medellin
               </a>
               <span className="text-muted lh-1">
-                30 Asesores <br/>
-                Marcos Barrios GZ
+                Lina Negrete  <small>Dir.</small> <br/>
+                Marcos Barrios <small>Ger.</small> <br/>
+                Zona Principal
               </span>
-                
             </div>
-            <span className="label label-lg label-light-dark label-inline font-weight-bold py-4">
-                  97%
-            </span>
+            <div className="d-flex flex-column w-50 mr-2">
+              <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
+                <span className="text-muted mr-2 font-size-sm">
+                  Radicados
+                </span>
+                <span className="text-dark s font-size-sm font-weight-bold">
+                  65% (2)
+                </span>
+              </div>
+              <div className="progress progress-xs w-100">
+                <div
+                  className="progress-bar bg-success"
+                  role="progressbar"
+                  style={{ width: "65%" }}
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
           </div>
 
           <div className="d-flex align-items-center mb-10">
@@ -141,13 +194,31 @@ export function ListsWidget1({ className }) {
                 Oficina Cali
               </a>
               <span className="text-muted lh-1">
-                30 Asesores <br/>
-                Marcos Barrios GZ
+                Lina Negrete  <small>Dir.</small> <br/>
+                Marcos Barrios <small>Ger.</small> <br/>
+                Zona Principal
               </span>
             </div>
-            <span className="label label-lg label-light-dark label-inline font-weight-bold py-4">
-                  97%
-            </span>
+            <div className="d-flex flex-column w-50 mr-2">
+              <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
+                <span className="text-muted mr-2 font-size-sm">
+                  Radicados
+                </span>
+                <span className="text-dark s font-size-sm font-weight-bold">
+                  65% (2)
+                </span>
+              </div>
+              <div className="progress progress-xs w-100">
+                <div
+                  className="progress-bar bg-success"
+                  role="progressbar"
+                  style={{ width: "65%" }}
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
           </div>
 
           <div className="d-flex align-items-center mb-2">
@@ -167,13 +238,31 @@ export function ListsWidget1({ className }) {
                 Oficina Pereira
               </a>
               <span className="text-muted lh-1">
-                30 Asesores <br/>
-                Marcos Barrios GZ
+                Lina Negrete  <small>Dir.</small> <br/>
+                Marcos Barrios <small>Ger.</small> <br/>
+                Zona Principal
               </span>
             </div>
-            <span className="label label-lg label-light-dark label-inline font-weight-bold py-4">
-                  97%
-            </span>
+            <div className="d-flex flex-column w-50 mr-2">
+              <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
+                <span className="text-muted mr-2 font-size-sm">
+                  Radicados
+                </span>
+                <span className="text-dark s font-size-sm font-weight-bold">
+                  65% (2)
+                </span>
+              </div>
+              <div className="progress progress-xs w-100">
+                <div
+                  className="progress-bar bg-success"
+                  role="progressbar"
+                  style={{ width: "65%" }}
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

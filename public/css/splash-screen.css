@@ -101,6 +101,21 @@ body {
   right: 25px;
 }
 
+.fc-scrollgrid-liquid {
+  height: 355px !important;
+}
+
+.modal-calendar {
+  height: 455px !important;
+}
+
+.tab-position {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  z-index: 9999999;
+}
+
 .nav-map {
   position: absolute;
   top: 15px !important;
