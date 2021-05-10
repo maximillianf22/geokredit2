@@ -49,6 +49,12 @@ body {
   }
 }
 
+.btn i {
+  padding-right: 0rem !important;
+  padding-right: 0px !important;
+}
+
+
 .fa-lg {
   font-size: 1.33333em !important;
   line-height: .75em;

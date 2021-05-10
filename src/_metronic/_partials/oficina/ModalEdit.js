@@ -22,6 +22,14 @@ export default function ModalEdit({show, handleClose}) {
                     <input className="form-control" type="number"/>
                 </div>
                 <div className="col-md-6 mt-md-4">
+                    <label>Latitud*</label>
+                    <input className="form-control" type="text"/>
+                </div>
+                <div className="col-md-6 mt-md-4">
+                    <label>Longitud*</label>
+                    <input className="form-control" type="text"/>
+                </div>
+                <div className="col-md-6 mt-md-4">
                     <label>Director de oficina*</label>
                    <select className="form-control">
                         <option>Jaime Barrios</option>
