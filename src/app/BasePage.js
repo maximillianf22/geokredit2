@@ -9,15 +9,6 @@ import GerentePage from './pages/GerentePage'
 import { MyPage } from "./pages/MyPage";
 import { DashboardPage } from "./pages/DashboardPage";
 
-const GoogleMaterialPage = lazy(() =>
-  import("./modules/GoogleMaterialExamples/GoogleMaterialPage")
-);
-const ReactBootstrapPage = lazy(() =>
-  import("./modules/ReactBootstrapExamples/ReactBootstrapPage")
-);
-const ECommercePage = lazy(() =>
-  import("./modules/ECommerce/pages/eCommercePage")
-);
 const UserProfilepage = lazy(() =>
   import("./modules/UserProfile/UserProfilePage")
 );
