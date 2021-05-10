@@ -36,7 +36,7 @@ export function HeaderMenu({ layoutProps }) {
 
             {/*begin::1 Level*/}
             <li className={`menu-item menu-item-rel`}>
-                <NavLink className="menu-link" to="/gerentes">
+                <NavLink className="menu-link" to="/gerente">
                     <span className="menu-text">Gerentes</span>
                     {layoutProps.rootArrowEnabled && (<i className="menu-arrow" />)}
                 </NavLink>
@@ -45,7 +45,7 @@ export function HeaderMenu({ layoutProps }) {
 
             {/*begin::1 Level*/}
             <li className={`menu-item menu-item-rel`}>
-                <NavLink className="menu-link" to="/asesores">
+                <NavLink className="menu-link" to="/asesor">
                     <span className="menu-text">Asesores</span>
                     {layoutProps.rootArrowEnabled && (<i className="menu-arrow" />)}
                 </NavLink>
@@ -54,7 +54,7 @@ export function HeaderMenu({ layoutProps }) {
 
             {/*begin::1 Level*/}
             <li className={`menu-item menu-item-rel`}>
-                <NavLink className="menu-link" to="/oficinas">
+                <NavLink className="menu-link" to="/oficina">
                     <span className="menu-text">Oficina</span>
                     {layoutProps.rootArrowEnabled && (<i className="menu-arrow" />)}
                 </NavLink>

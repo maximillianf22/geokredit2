@@ -27,7 +27,7 @@ function MapContainer(props) {
   }, [executeFunction])
   const barranquillaPos = () => {
     setMapProps({
-      zoom: 12,
+      zoom: 13,
       center: { lat: 10.96854, lng: -74.78132 },
       visibleClients: true
     })
@@ -71,7 +71,7 @@ function MapContainer(props) {
 
   const handleClickMarker = (lat, lng) => {
     setMapProps({
-      zoom: 14,
+      zoom: 12,
       center: { lat: lat, lng: lng },
       visibleClients: true,
       disableDefaultUI: true,
@@ -104,7 +104,7 @@ function MapContainer(props) {
       defaultZoom={mapProps.zoom}
       zoom={mapProps.zoom}
       cllickableIcons={mapProps.cllickableIcons}
-      disableDefaultUI={true}
+      disableDefaultUI={mapProps.disableDefaultUI}
     >
 
       <div lat={4.60971} lng={-74.08175} onClick={() => handleClickMarker(4.60971, -74.08175)} >
@@ -155,7 +155,54 @@ function MapContainer(props) {
         </OverlayTrigger>
       </div>
 
+      <div lat={10.995018} lng={-74.806687} className={mapProps.visibleClients ? '' : 'd-none'}>
+        <OverlayTrigger trigger="focus" placement="top" overlay={popover}>
+          <button className="btn">
+            <img src={asesorActive} alt="" style={{ height: '35px', width: '35px' }} />
+          </button>
+        </OverlayTrigger>
+      </div>
 
+      <div lat={10.984223} lng={-74.801095} className={mapProps.visibleClients ? '' : 'd-none'}>
+        <OverlayTrigger trigger="focus" placement="top" overlay={popover}>
+          <button className="btn">
+            <img src={asesorActive} alt="" style={{ height: '35px', width: '35px' }} />
+          </button>
+        </OverlayTrigger>
+      </div>
+
+      <div lat={10.980655} lng={-74.815820} className={mapProps.visibleClients ? '' : 'd-none'}>
+        <OverlayTrigger trigger="focus" placement="top" overlay={popover}>
+          <button className="btn">
+            <img src={asesorInactive} alt="" style={{ height: '35px', width: '35px' }} />
+          </button>
+        </OverlayTrigger>
+      </div>
+
+      <div lat={4.647650} lng={-74.118163} className={mapProps.visibleClients ? '' : 'd-none'}>
+        <OverlayTrigger trigger="focus" placement="top" overlay={popover}>
+          <button className="btn">
+            <img src={asesorInactive} alt="" style={{ height: '35px', width: '35px' }} />
+          </button>
+        </OverlayTrigger>
+      </div>
+
+      <div lat={4.666369} lng={-74.125675} className={mapProps.visibleClients ? '' : 'd-none'}>
+        <OverlayTrigger trigger="focus" placement="top" overlay={popover}>
+          <button className="btn">
+            <img src={asesorActive} alt="" style={{ height: '35px', width: '35px' }} />
+          </button>
+        </OverlayTrigger>
+      </div>
+
+      <div lat={4.684775} lng={-74.090305} className={mapProps.visibleClients ? '' : 'd-none'}>
+        <OverlayTrigger trigger="focus" placement="top" overlay={popover}>
+          <button className="btn">
+            <img src={asesorInactive} alt="" style={{ height: '35px', width: '35px' }} />
+          </button>
+        </OverlayTrigger>
+      </div>
+    
       <ModalCalendar show={showModalCalendar} handleClose={handleCloseModalCalendar} />
       <ModalPerfil show={showModalPerfil} handleClose={handleCloseModalPerfil} />
       <ModalOficina show={showModalOficina} handleClose={handleCloseModalOficina} />

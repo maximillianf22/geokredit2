@@ -6,12 +6,6 @@ import { useHtmlClassService } from "../../../layout";
 
 export function StatsWidget11({ className, symbolShape, baseColor }) {
   const uiService = useHtmlClassService();
-  const tabs = {
-    tab1: "kt_tab_pane_3_1",
-    tab2: "kt_tab_pane_3_2",
-    tab3: "kt_tab_pane_3_3",
-  };
-  const [activeTab, setActiveTab] = useState(tabs.tab1);
   const layoutProps = useMemo(() => {
     return {
       colorsGrayGray500: objectPath.get(
@@ -56,46 +50,9 @@ export function StatsWidget11({ className, symbolShape, baseColor }) {
   return (
     <div className={`card card-custom ${className}`}>
       <div className="card-body p-0">
-      <div className="card-toolbar tb-nav bg-secondary rounded">
-        <ul className="nav nav-pills nav-pills-sm nav-dark-75">
-          <li className="nav-item">
-            <a
-              className={`nav-link py-2 px-4 ${activeTab === tabs.tab1 &&
-                "active"}`}
-              data-toggle="tab"
-              href={`#${tabs.tab1}`}
-              onClick={() => setActiveTab(tabs.tab1)}
-            >
-              Mes
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              className={`nav-link py-2 px-4 ${activeTab === tabs.tab2 &&
-                "active"}`}
-              data-toggle="tab"
-              href={`#${tabs.tab2}`}
-              onClick={() => setActiveTab(tabs.tab2)}
-            >
-              Semana
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              className={`nav-link py-2 px-4 ${activeTab === tabs.tab3 &&
-                "active"}`}
-              data-toggle="tab"
-              href={`#${tabs.tab3}`}
-              onClick={() => setActiveTab(tabs.tab3)}
-            >
-              Dia
-            </a>
-          </li>
-        </ul>
-      </div>
         <div className="d-flex align-items-center justify-content-between px-8 pt-8 flex-grow-1">
-            <span className="symbol-label h4 font-weight-bold">
-                Meta mensual Colocados <br/>
+              <span className="symbol-label h4 font-weight-bold w-255">
+                Meta Mensual Colocados <br/>
                 <small>$150.000.000</small><br/>
                 <small>15 Dias restantes</small> <br/>
                 <div className="d-flex flex-column w-100 mr-2">

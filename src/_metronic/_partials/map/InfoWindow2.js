@@ -20,7 +20,7 @@ function InfoWindowCustom2({ handleShowModalOficina}) {
         </div>
         <div className = "col-md-3" onClick={handleShowModalOficina}>
           <button className = "btn btn-sm btn-light-primary" >
-            <i className = "fa fa-expand-arrows-alt p-0 text-primary"></i>
+            <i className = "fa fa-lg fa-expand-arrows-alt p-0 text-primary"></i>
           </button>
         </div>
     </div>

@@ -7,7 +7,7 @@ import { toAbsoluteUrl } from "../../../_helpers";
 import { useHtmlClassService } from "../../../layout";
 import { KTUtil } from "../../../_assets/js/components/util";
 
-export function StatsWidget10({ className, symbolShape, baseColor }) {
+export function StatsWidget10({ className }) {
   const uiService = useHtmlClassService();
   const layoutProps = useMemo(() => {
     return {
@@ -23,17 +23,17 @@ export function StatsWidget10({ className, symbolShape, baseColor }) {
         uiService.config,
         "js.colors.gray.gray300"
       ),
-      colorsThemeBaseSuccess: objectPath.get(
+      colorsThemeBaseInfo: objectPath.get(
         uiService.config,
-        `js.colors.theme.base.${baseColor}`
+        "js.colors.theme.base.info"
       ),
-      colorsThemeLightSuccess: objectPath.get(
+      colorsThemeLightInfo: objectPath.get(
         uiService.config,
-        `js.colors.theme.light.${baseColor}`
+        "js.colors.theme.light.info"
       ),
-      fontFamily: objectPath.get(uiService.config, "js.fontFamily"),
+      fontFamily: objectPath.get(uiService.config, "js.fontFamily")
     };
-  }, [uiService, baseColor]);
+  }, [uiService]);
 
   useEffect(() => {
     const element = document.getElementById("kt_stats_widget_10_chart");
@@ -57,29 +57,40 @@ export function StatsWidget10({ className, symbolShape, baseColor }) {
       <div className={`card card-custom ${className}`}>
         {/* begin::Body */}
         <div className="card-body p-0">
-          <div className="d-flex align-items-center justify-content-between card-spacer flex-grow-1">
-            <span
-              className={`symbol ${symbolShape} symbol-50 symbol-light${baseColor} mr-2`}
-            >
-              <span className="symbol-label">
-                <span className={`svg-icon svg-icon-xl svg-icon-${baseColor}`}>
-                  <SVG
-                    src={toAbsoluteUrl("/media/svg/icons/Shopping/Cart3.svg")}
-                  ></SVG>
-                </span>
+          <div className="d-flex align-items-center justify-content-between px-8 pt-8 flex-grow-1">
+              <span className="symbol-label h4 font-weight-bold w-255">
+                  Meta Semanal Colocados <br/>
+                  <small>$150.000.000</small><br/>
+                  <small>3 Dias restantes</small> <br/>
+                  <div className="d-flex flex-column w-100 mr-2">
+                      <div className="d-flex align-items-center justify-content-between mb-2">
+                        <span className="text-muted mr-2 font-size-sm font-weight-bold">
+                        </span>
+                        <span className="text-muted font-size-sm font-weight-bold">
+                          65%
+                        </span>
+                      </div>
+                      <div className="progress progress-xs w-100">
+                        <div
+                          className="progress-bar bg-info"
+                          role="progressbar"
+                          style={{ width: "65%" }}
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
               </span>
-            </span>
             <div className="d-flex flex-column text-right">
-              <span className="text-dark-75 font-weight-bolder font-size-h3">
-                +259
+              <span className="text-dark-75 font-weight-bolder font-size-h3 mt-5">
+                750,000,000$
               </span>
-              <span className="text-muted font-weight-bold mt-2">Sales Change</span>
             </div>
           </div>
           <div
             id="kt_stats_widget_10_chart"
             className="card-rounded-bottom"
-            data-color={baseColor}
             style={{ height: "150px" }}
           />
         </div>
@@ -126,7 +137,7 @@ function getChartOption(layoutProps, height) {
       curve: "smooth",
       show: true,
       width: 3,
-      colors: [layoutProps.colorsThemeBaseSuccess],
+      colors: [layoutProps.colorsThemeBaseInfo],
     },
     xaxis: {
       categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
@@ -207,12 +218,12 @@ function getChartOption(layoutProps, height) {
         },
       },
     },
-    colors: [layoutProps.colorsThemeLightSuccess],
+    colors: [layoutProps.colorsThemeLightInfo],
     markers: {
-      colors: [layoutProps.colorsThemeLightSuccess],
-      strokeColor: [layoutProps.colorsThemeBaseSuccess],
-      strokeWidth: 3,
-    },
+      colors: [layoutProps.colorsThemeLightInfo],
+      strokeColor: [layoutProps.colorsThemeBaseInfo],
+      strokeWidth: 3
+    }
   };
   return options;
 }

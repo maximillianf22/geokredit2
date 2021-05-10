@@ -49,8 +49,22 @@ body {
   }
 }
 
+.fa-lg {
+  font-size: 1.33333em !important;
+  line-height: .75em;
+  vertical-align: -.0667em;
+}
+
+.fa-2x {
+  font-size: 2em!important;
+}
+
 .brand-logo {
   width: 170px !important;
+}
+
+.infowindows {
+  min-width: 250px;
 }
 
 .aside-menu .menu-nav > .menu-item.menu-item-active > .menu-link {
@@ -106,14 +120,21 @@ body {
 }
 
 .modal-calendar {
-  height: 455px !important;
+  height: 540px !important;
 }
 
-.tab-position {
+.nav-position {
   position: absolute;
-  right: 25px;
+  right: 40px;
   top: 25px;
-  z-index: 9999999;
+  z-index: 80;
+}
+
+.nav-position-modal {
+  position: absolute;
+  right: 30px;
+  top: -49px;
+  z-index: 80;
 }
 
 .nav-map {
@@ -122,11 +143,57 @@ body {
   right: 30% !important;
 }
 
+.fc .fc-button-primary {
+  background-color: #3699FF !important;
+  border-color: #ffffff !important;
+  border-radius: 5px !important;
+}
+
+i {
+  font-size: 1rem !important;
+  color: currentcolor !important;
+}
+
+.no-border {
+  border: 0px !important;
+  border: 0rem !important;
+}
 
 .splash-spinner .path {
   stroke: #5d78ff;
   stroke-linecap: round;
   animation: dash 1.5s ease-in-out infinite;
+}
+
+.fc-col-header {
+  width: 100% !important;
+}
+
+.fc-scrollgrid {
+  background-color: white;
+}
+
+.fc .fc-scrollgrid-liquid {
+  height: 100%;
+  height: 425px !important;
+}
+
+.fc-daygrid-body{
+  width: 100% !important;
+}
+
+.h-570 {
+  height: 540px;
+}
+
+.fc-scrollgrid-sync-table
+{
+  width: 100% !important;
+  height: 415px !important;
+}
+
+.w-255 {
+  width: 255px;
 }
 
 .h-270 {

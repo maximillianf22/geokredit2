@@ -5,11 +5,6 @@ import {toAbsoluteUrl} from "../../../_helpers";
 
 
 export function ListsWidget3({ className }) {
-  const tabs = {
-    tab11: "kt_tab_pane__1",
-    tab21: "kt_tab_pane__2",
-  };
-  const [activeTab, setActiveTab] = useState(tabs.tab11);
   return (
     <>
       <div className={`card card-custom ${className}`}>
@@ -18,32 +13,6 @@ export function ListsWidget3({ className }) {
           <h3 className="card-title font-weight-bolder text-dark">
             Top Asesores
           </h3>
-          <div className="card-toolbar tb-nav bg-secondary rounded mt-0">
-            <ul className="nav nav-pills nav-pills-sm nav-dark-75">
-              <li className="nav-item">
-                <a
-                  className={`nav-link py-2 px-4 ${activeTab === tabs.tab11 &&
-                    "active"}`}
-                  data-toggle="tab"
-                  href={`#${tabs.tab11}`}
-                  onClick={() => setActiveTab(tabs.tab11)}
-                >
-                  Alta
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className={`nav-link py-2 px-4 ${activeTab === tabs.tab21 &&
-                    "active"}`}
-                  data-toggle="tab"
-                  href={`#${tabs.tab21}`}
-                  onClick={() => setActiveTab(tabs.tab21)}
-                >
-                  Baja
-                </a>
-              </li>
-            </ul>        
-          </div>
         </div>
 
         {/* Body */}

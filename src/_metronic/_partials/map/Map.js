@@ -3,25 +3,13 @@ import {
     Button,
     InputGroup,
     FormControl,
-    DropdownButton,
-    Dropdown
+    Card,
+    Accordion,
   } from "react-bootstrap";
-import {useHtmlClassService} from "../../layout";
-import {Card, CardBody, CardHeader, Notice} from "../controls";
-
 import MapContainer from './MapContainer';
-import ModalCalendar from './ModalCalendar';
-
 import './map.css';
 export function Map() {
-    const tabs = {
-        tab1: "kt_tab_pane1",
-        tab2: "kt_tab_pane2",
-        tab3: "kt_tab_pane3",
-      };
-    const [activeTab, setActiveTab] = useState(tabs.tab1);
     const [handlerB, setHandlerB] = useState(0)
-
     return (
         <>
             <div className="card">
@@ -48,149 +36,126 @@ export function Map() {
                                 aria-describedby="basic-addon2"
                             />
                         </InputGroup>
-                            <button className = "btn btn-light-primary btn-block" onClick = {() => setHandlerB(curr => curr+1)}>
-                                Gerentes de Zona 
-                            </button>
-                            <button className = "btn btn-light-primary btn-block" onClick = {() => setHandlerB(curr => curr+1)}>
-                                Oficinas
-                            </button>
-                            <div className="d-flex align-items-center my-5">
-                                <span className="bullet bullet-bar bg-primary align-self-stretch"></span>
+                        <Accordion defaultActiveKey="1">
+                            <Card className="no-border">
+                                <Card.Header className="bg-light-primary my-1 rounded" >
+                                    <Accordion.Toggle as={Button} className="btn-block" variant="link" eventKey="0">
+                                    Gerentes de Zona
+                                    </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey="0">
+                                    <Card.Body className="p-0">Hello! I'm the body</Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                            <Card className="no-border">
+                                <Card.Header className="bg-light-primary my-1 rounded" >
+                                    <Accordion.Toggle as={Button} className="btn-block" variant="link" eventKey="1">
+                                    Oficinas
+                                    </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey="1">
+                                    <Card.Body className="p-0">
+                                    <div className="d-flex align-items-center my-5">
+                                        <span className="bullet bullet-bar bg-primary align-self-stretch"></span>
+                                        <label className="checkbox checkbox-lg checkbox-light-primary checkbox-single flex-shrink-0 m-0 mx-4">
+                                        <input type="checkbox" value="1" onChange={() => setHandlerB(curr => curr+1)} />
+                                        <span></span>
+                                        </label>
+                                        <div className="d-flex flex-column flex-grow-1">
+                                        <a
+                                            href="#"
+                                            className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
+                                        >
+                                            Oficina Barranquilla
+                                        </a>
+                                        <span className="text-muted font-weight-bold lh-1 ">90% de progreso</span>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex align-items-center my-5">
+                                        <span className="bullet bullet-bar bg-warning align-self-stretch"></span>
 
-                                <label className="checkbox checkbox-lg checkbox-light-primary checkbox-single flex-shrink-0 m-0 mx-4">
-                                <input type="checkbox" value="1" onChange={() => setHandlerB(curr => curr+1)} />
-                                <span></span>
-                                </label>
-
-                                <div className="d-flex flex-column flex-grow-1">
-                                <a
-                                    href="#"
-                                    className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
-                                >
-                                    Oficina Barranquilla
-                                </a>
-                                <span className="text-muted font-weight-bold lh-1 ">90% de progreso</span>
-                                </div>
-                            </div>
-                            <div className="d-flex align-items-center my-5">
-                                <span className="bullet bullet-bar bg-warning align-self-stretch"></span>
-
-                                <label className="checkbox checkbox-lg checkbox-light-warning checkbox-single flex-shrink-0 m-0 mx-4">
-                                <input type="checkbox" value="1" onChange={() => setHandlerB(curr => curr+1)} />
-                                <span></span>
-                                </label>
-
-                                <div className="d-flex flex-column flex-grow-1">
-                                <a
-                                    href="#"
-                                    className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
-                                >
-                                    Oficina Bogota
-                                </a>
-                                <span className="text-muted font-weight-bold lh-1 ">90% de progreso</span>
-                                </div>
-                            </div>
-                            <div className="d-flex align-items-center my-5">
-                                <span className="bullet bullet-bar bg-success align-self-stretch"></span>
-
-                                <label className="checkbox checkbox-lg checkbox-light-success checkbox-single flex-shrink-0 m-0 mx-4">
-                                <input type="checkbox" value="1" onChange={() => setHandlerB(curr => curr+1)} />
-                                <span></span>
-                                </label>
-
-                                <div className="d-flex flex-column flex-grow-1">
-                                <a
-                                    href="#"
-                                    className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
-                                >
-                                    Oficina Medellin
-                                </a>
-                                <span className="text-muted font-weight-bold lh-1 ">90% de progreso</span>
-                                </div>
-                            </div>
-                            <div className="d-flex align-items-center my-5">
-                                <span className="bullet bullet-bar bg-danger align-self-stretch"></span>
-
-                                <label className="checkbox checkbox-lg checkbox-light-danger checkbox-single flex-shrink-0 m-0 mx-4">
-                                <input type="checkbox" value="1" onChange={() => setHandlerB(curr => curr+1)} />
-                                <span></span>
-                                </label>
-
-                                <div className="d-flex flex-column flex-grow-1">
-                                <a
-                                    href="#"
-                                    className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
-                                >
-                                    Oficina Cali
-                                </a>
-                                <span className="text-muted font-weight-bold lh-1 ">90% de progreso</span>
-                                </div>
-                            </div>
-                            <div className="d-flex align-items-center my-5">
-                                <span className="bullet bullet-bar bg-info align-self-stretch"></span>
-
-                                <label className="checkbox checkbox-lg checkbox-light-info checkbox-single flex-shrink-0 m-0 mx-4">
-                                <input type="checkbox" value="1" onChange={() => setHandlerB(curr => curr+1)} />
-                                <span></span>
-                                </label>
-
-                                <div className="d-flex flex-column flex-grow-1">
-                                <a
-                                    href="#"
-                                    className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
-                                >
-                                    Oficina Pereira
-                                </a>
-                                <span className="text-muted font-weight-bold lh-1 ">90% de progreso</span>
-                                </div>
-                            </div>
-                            
-                            <button className = "btn btn-light-primary btn-block" onClick = {() => setHandlerB(curr => curr+1)}>
-                                Ciudades 
-                            </button>
+                                        <label className="checkbox checkbox-lg checkbox-light-warning checkbox-single flex-shrink-0 m-0 mx-4">
+                                        <input type="checkbox" value="1" onChange={() => setHandlerB(curr => curr+2)} />
+                                        <span></span>
+                                        </label>
+                                        <div className="d-flex flex-column flex-grow-1">
+                                        <a
+                                            href="#"
+                                            className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
+                                        >
+                                            Oficina Bogota
+                                        </a>
+                                        <span className="text-muted font-weight-bold lh-1 ">90% de progreso</span>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex align-items-center my-5">
+                                        <span className="bullet bullet-bar bg-success align-self-stretch"></span>
+                                        <label className="checkbox checkbox-lg checkbox-light-success checkbox-single flex-shrink-0 m-0 mx-4">
+                                        <input type="checkbox" value="1"/>
+                                        <span></span>
+                                        </label>
+                                        <div className="d-flex flex-column flex-grow-1">
+                                        <a
+                                            href="#"
+                                            className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
+                                        >
+                                            Oficina Medellin
+                                        </a>
+                                        <span className="text-muted font-weight-bold lh-1 ">90% de progreso</span>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex align-items-center my-5">
+                                        <span className="bullet bullet-bar bg-danger align-self-stretch"></span>
+                                        <label className="checkbox checkbox-lg checkbox-light-danger checkbox-single flex-shrink-0 m-0 mx-4">
+                                        <input type="checkbox" value="1"/>
+                                        <span></span>
+                                        </label>
+                                        <div className="d-flex flex-column flex-grow-1">
+                                        <a
+                                            href="#"
+                                            className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
+                                        >
+                                            Oficina Cali
+                                        </a>
+                                        <span className="text-muted font-weight-bold lh-1 ">90% de progreso</span>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex align-items-center my-5">
+                                        <span className="bullet bullet-bar bg-info align-self-stretch"></span>
+                                        <label className="checkbox checkbox-lg checkbox-light-info checkbox-single flex-shrink-0 m-0 mx-4">
+                                        <input type="checkbox" value="1"/>
+                                        <span></span>
+                                        </label>
+                                        <div className="d-flex flex-column flex-grow-1">
+                                        <a
+                                            href="#"
+                                            className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
+                                        >
+                                            Oficina Pereira
+                                        </a>
+                                        <span className="text-muted font-weight-bold lh-1 ">90% de progreso</span>
+                                        </div>
+                                    </div>                         
+                                    </Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                            <Card className="no-border">
+                                <Card.Header className="bg-light-primary my-1 rounded" >
+                                    <Accordion.Toggle as={Button} className="btn-block" variant="link" eventKey="2">
+                                    Ciudades
+                                    </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey="2">
+                                    <Card.Body className="p-0">Hello! I'm another body</Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                        </Accordion>
                         </div>
                         <div className = "col-md-9">
                             <div className = "map">
                                 <MapContainer executeFunction = {handlerB}/>
                                 <div className = "map__card">
-                                    <div className="card-toolbar tb-nav nav-map bg-secondary rounded">
-                                        <ul className="nav nav-pills nav-pills-sm nav-dark-75">
-                                        <li className="nav-item">
-                                            <a
-                                            className={`nav-link py-1 px-2 ${activeTab === tabs.tab1 &&
-                                                "active"}`}
-                                            data-toggle="tab"
-                                            href={`#${tabs.tab1}`}
-                                            onClick={() => setActiveTab(tabs.tab1)}
-                                            >
-                                            Mes
-                                            </a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a
-                                            className={`nav-link py-1 px-2 ${activeTab === tabs.tab2 &&
-                                                "active"}`}
-                                            data-toggle="tab"
-                                            href={`#${tabs.tab2}`}
-                                            onClick={() => setActiveTab(tabs.tab2)}
-                                            >
-                                            Semana
-                                            </a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a
-                                            className={`nav-link py-1 px-2 ${activeTab === tabs.tab3 &&
-                                                "active"}`}
-                                            data-toggle="tab"
-                                            href={`#${tabs.tab3}`}
-                                            onClick={() => setActiveTab(tabs.tab3)}
-                                            >
-                                            Dia
-                                            </a>
-                                        </li>
-                                        </ul>
-                                    </div>
-                                    <div className="d-flex align-items-center mb-0 mt-10">
+                                    <div className="d-flex align-items-center mb-0">
                                         <div className="symbol symbol-50 symbol-light-success mr-5">
                                         <span className="symbol-label">
                                             <span className="svg-icon svg-icon-lg svg-icon-success">
@@ -198,7 +163,6 @@ export function Map() {
                                             </span>
                                         </span>
                                         </div>
-
                                         <div className="d-flex flex-column font-weight-bold w-75">
                                         <a
                                             href="#"
