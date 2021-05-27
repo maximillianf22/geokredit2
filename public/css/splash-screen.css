@@ -226,3 +226,44 @@ i {
     stroke-dashoffset: -124;
   }
 }
+
+.fc-view-harness-active {
+  max-height: 430px !important;
+}
+
+.btn-filtro {
+    position: absolute;
+    top: -38px;
+    right: 100px;
+}
+
+.card-filtro{
+  border: 0px solid #ffffff !important;
+}
+
+.modal .modal-header .close {
+  outline: none !important;
+  color: #6f6f6f;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  padding: 12px !important;
+  margin: 0;
+  line-height: 0;
+  background-image: url(https://lh3.googleusercontent.com/proxy/7xOhvnhLoV4hjqi_sG-iNqx2vdCNcZa1BZ8PZjnLomn4U1zhHXB11tEvln6yzCs-AFhNi_S2Sr4Ao_id54kcYFNszegAKG9IYDWG_9UOWoE90J8-NHKPO5NTOeS7yD6i-MSW) !important;
+  background-size: contain !important;
+}
+
+.bootstrap-tagsinput .tag {
+  cursor: pointer;
+  margin: 5px 3px 5px 0;
+  position: relative;
+  padding: 3px 8px;
+  border-radius: 12px;
+  color: #000 !important;
+  font-weight: 500;
+  font-size: .75em;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 1.5em;
+  background-color: #dbad2d !important;
+  padding-left: .8em;
+}

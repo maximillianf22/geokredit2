@@ -37,7 +37,7 @@ function InfoWindowCustom3({ handleShowModalOficina}) {
                 </div> 
             </div>
             <div className="row my-1">
-                <div className="font-size-sm lh-1 text-primary">$10.000.000 <br/>
+                <div className="font-size-sm lh-1 text-primary">$10.000.000 - <b>Colocado</b>  <br/>
                     <b className="text-muted">Credito</b>
                 </div> 
             </div>

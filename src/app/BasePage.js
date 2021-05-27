@@ -2,9 +2,14 @@ import React, { Suspense, lazy } from "react";
 import { Redirect, Switch, Route } from "react-router-dom";
 import { LayoutSplashScreen, ContentRoute } from "../_metronic/layout";
 import { MapPage } from "./pages/MapPage";
-import OficinaPage from './pages/OficinaPage'
-import AsesorPage from './pages/AsesorPage'
-import GerentePage from './pages/GerentePage'
+import OficinaPage from './pages/Oficinas/OficinaPage'
+import OficinaDetail from './pages/Oficinas/OficinaDetail'
+import AsesorPage from './pages/Asesores/AsesorPage'
+import AsesorDetail from './pages/Asesores/AsesorDetail'
+import GerentePage from './pages/Gerentes/GerentePage'
+import GerenteDetail from './pages/Gerentes/GerenteDetail'
+import CalendarPage from './pages/CalendarPage'
+import RolesPage from './pages/RolesPage'
 
 import { MyPage } from "./pages/MyPage";
 import { DashboardPage } from "./pages/DashboardPage";
@@ -28,9 +33,14 @@ export default function BasePage() {
         }
         <ContentRoute path="/dashboard" component={DashboardPage} />
         <ContentRoute path="/mapa" component={MapPage} />
+        <ContentRoute path="/calendario" component={CalendarPage} />
+        <ContentRoute path="/roles" component={RolesPage} />
         <ContentRoute path="/oficina" component={OficinaPage} />
+        <ContentRoute path="/oficina-detalle" component={OficinaDetail} />
         <ContentRoute path="/asesor" component={AsesorPage} />
+        <ContentRoute path="/asesor-detalle" component={AsesorDetail} />
         <ContentRoute path="/gerente" component={GerentePage} />
+        <ContentRoute path="/gerente-detalle" component={GerenteDetail} />
         <ContentRoute path="/my-page" component={MyPage} />
         <Route path="/user-profile" component={UserProfilepage} />
         <Redirect to="error/error-v1" />

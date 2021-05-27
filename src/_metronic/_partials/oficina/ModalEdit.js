@@ -42,7 +42,7 @@ export default function ModalEdit({show, handleClose}) {
                     </select>
                 </div> 
                 <div className="col-md-6 mt-md-4">
-                    <label>Gestor de oficina*</label>
+                    <label>Gestor de oficina</label>
                    <select className="form-control">
                         <option>Jaime Barrios</option>
                     </select>
