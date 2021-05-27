@@ -1,7 +1,6 @@
 {
     "name": "geokredit",
     "version": "7.2.7",
-    "private": false,
     "homepage": "http://demo-geokredit.developapp.co/",
     "scripts": {
         "start": "react-scripts start -o",
