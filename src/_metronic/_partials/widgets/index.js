@@ -1,6 +1,8 @@
 // Mixed
 export { MixedWidget1 } from "./mixed/MixedWidget1";
-export { MixedWidget4 } from "./mixed/MixedWidget4";
+export { MixedWidget40 } from "./mixed/MixedWidget40";
+export { MixedWidget41 } from "./mixed/MixedWidget41";
+export { MixedWidget42 } from "./mixed/MixedWidget42";
 export { MixedWidget6 } from "./mixed/MixedWidget6";
 export { MixedWidget10 } from "./mixed/MixedWidget10";
 export { MixedWidget11 } from "./mixed/MixedWidget11";
@@ -16,6 +18,7 @@ export { ListsWidget9 } from "./lists/ListsWidget9";
 export { ListsWidget10 } from "./lists/ListsWidget10";
 export { ListsWidget11 } from "./lists/ListsWidget11";
 export { ListsWidget14 } from "./lists/ListsWidget14";
+export { ListsWidget15 } from "./lists/ListsWidget15";
 
 // Stats
 export { StatsWidget10 } from "./stats/StatsWidget10";
@@ -35,6 +38,8 @@ export { AdvanceTablesWidget7 } from "./advance-tables/AdvanceTablesWidget7";
 export { AdvanceTablesWidget9 } from "./advance-tables/AdvanceTablesWidget9";
 
 // Tiles
+export { TilesWidget } from "./tiles/TilesWidget";
+export { TilesWidget2 } from "./tiles/TilesWidget2";
 export { TilesWidget1 } from "./tiles/TilesWidget1";
 export { TilesWidget3 } from "./tiles/TilesWidget3";
 export { TilesWidget10 } from "./tiles/TilesWidget10";
@@ -45,3 +50,4 @@ export { TilesWidget14 } from "./tiles/TilesWidget14";
 
 // Profile
 export { ProfileCard } from "./profile/ProfileCard";
+export { GerenteCard } from "./profile/GerenteCard";

@@ -19,7 +19,7 @@ export default function OficinaPage() {
       <div className="col-md-12">
         <div className="card">
         <div className="card-header">
-            <div className="d-flex justify-content-md-between flex-sm-column flex-md-row">
+            <div className="d-flex justify-content-between flex-sm-column flex-md-row">
               <h2>Oficinas</h2>
               <div>
                 <button
@@ -37,7 +37,7 @@ export default function OficinaPage() {
                     as={Button}
                     variant="link"
                     eventKey="0"
-                    className="btn-filtro btn btn-primary"
+                    className="btn-filtro btn btn-primary mt-1 mt-lg-0"
                   >
                     <i className="fa fa-filter mr-2"></i> Filtro
                   </Accordion.Toggle>
@@ -169,9 +169,9 @@ export default function OficinaPage() {
                         >
                           <i className="fa fa-edit"></i>
                         </button>
-                        <button className="btn btn-info btn-sm mr-md-2 mt-sm-2">
+                        <a href="/oficina-detalle" className="btn btn-info btn-sm mr-md-2 mt-sm-2">
                           <i className="fa fa-eye"></i>
-                        </button>
+                        </a>
                         <button className="btn btn-danger btn-sm mt-sm-2">
                           <i className="fa fa-minus"></i>
                         </button>

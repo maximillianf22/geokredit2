@@ -21,7 +21,7 @@ export function ProfileCard() {
     <>
       {user && (
         <div
-          className="flex-row-auto offcanvas-mobile"
+          className="flex-row-auto "
           id="kt_profile_aside"
         >
           <div className="card card-custom card-stretch">

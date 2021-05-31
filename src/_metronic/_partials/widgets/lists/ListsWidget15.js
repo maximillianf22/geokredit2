@@ -4,7 +4,7 @@ import { Dropdown } from "react-bootstrap";
 import { DropdownCustomToggler, DropdownMenu1 } from "../../dropdowns";
 import { shallowEqual, useSelector } from "react-redux";
 
-export function ListsWidget14({ className }) {
+export function ListsWidget15({ className }) {
   const user = useSelector(({ auth }) => auth.user, shallowEqual);
 
   useEffect(() => {
@@ -70,7 +70,7 @@ export function ListsWidget14({ className }) {
                 <span className="font-weight-bold mr-2">Telefono:</span>
                 <span className="text-muted">{user.phone}</span>
               </div>
-              <div className="d-flex align-items-center justify-content-between mb-2">
+              <div className="d-flex align-items-center justify-content-between">
                 <span className="font-weight-bold mr-2">Zona:</span>
                 <span className="text-muted">{user.address.city}</span>
               </div>
@@ -90,7 +90,7 @@ export function ListsWidget14({ className }) {
         {/* Body */}
         <div
           className="card-body pt-0 px-15"
-          style={{ maxHeight: "640px", overflowY: "auto" }}
+          style={{ maxHeight: "665px", overflowY: "auto" }}
         >
           <div className="timeline timeline-6 mt-3">
             <div className="timeline-item align-items-start">

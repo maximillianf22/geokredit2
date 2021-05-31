@@ -37,6 +37,10 @@ export default function ModalEdit({show, handleClose}) {
                    <input className="form-control" type="date" />
                 </div> 
                 <div className="col-md-6 mt-md-4">
+                    <label>Fecha de Nacimiento*</label>
+                   <input className="form-control" type="date" />
+                </div>
+                <div className="col-md-6 mt-md-4">
                     <label>Zona*</label>
                    <select className="form-control">
                         <option>Zona x</option>
@@ -50,7 +54,10 @@ export default function ModalEdit({show, handleClose}) {
                         <option>Lina Marcela</option>
                     </select>
                 </div> 
-                
+                <div className="col-md-6 mt-md-4">
+                    <label>Foto</label>
+                   <input className="form-control" type="file" />
+                </div> 
             </div>
         </Modal.Body>
         <Modal.Footer>

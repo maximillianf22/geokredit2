@@ -2,12 +2,12 @@ import React, { Suspense, lazy } from "react";
 import { Redirect, Switch, Route } from "react-router-dom";
 import { LayoutSplashScreen, ContentRoute } from "../_metronic/layout";
 import { MapPage } from "./pages/MapPage";
+import UsuariosPage from './pages/Usuarios/UsuariosPage'
 import OficinaPage from './pages/Oficinas/OficinaPage'
 import OficinaDetail from './pages/Oficinas/OficinaDetail'
 import AsesorPage from './pages/Asesores/AsesorPage'
 import AsesorDetail from './pages/Asesores/AsesorDetail'
 import GerentePage from './pages/Gerentes/GerentePage'
-import GerenteDetail from './pages/Gerentes/GerenteDetail'
 import CalendarPage from './pages/CalendarPage'
 import RolesPage from './pages/RolesPage'
 
@@ -40,8 +40,8 @@ export default function BasePage() {
         <ContentRoute path="/asesor" component={AsesorPage} />
         <ContentRoute path="/asesor-detalle" component={AsesorDetail} />
         <ContentRoute path="/gerente" component={GerentePage} />
-        <ContentRoute path="/gerente-detalle" component={GerenteDetail} />
         <ContentRoute path="/my-page" component={MyPage} />
+        <ContentRoute path="/usuarios" component={UsuariosPage} />
         <Route path="/user-profile" component={UserProfilepage} />
         <Redirect to="error/error-v1" />
       </Switch>

@@ -35,22 +35,22 @@ function InfoWindowCustom({handleShowModalCalendar, handleShowModalAsesor, handl
             </span>
           </div>
         </div>
-        <div className = "col-md-3" onClick={handleShowModalCalendar}>
+        <div className = "col-3" onClick={handleShowModalCalendar}>
           <button className = "btn btn-sm btn-light-primary" >
             <i className = "fa fa-lg fa-calendar p-0 text-primary"></i>
           </button>
         </div>
-        <div className = "col-md-3" onClick={handleShowModalPerfil}>
+        <div className = "col-3 " onClick={handleShowModalPerfil}>
           <button className = "btn btn-sm btn-light-primary" >
             <i className = "fa fa-lg fa-user p-0 text-primary"></i>
           </button>
         </div>
-        <div className = "col-md-3">
+        <div className = "col-3">
           <button className = "btn btn-sm btn-light-primary" onClick={handleShowModalRoutes}>
             <i className = "fa fa-lg fa-route p-0 text-primary"></i>
           </button>
         </div>
-        <div className = "col-md-3">
+        <div className = "col-3 offcanvas-mobile">
           <button className = "btn btn-sm btn-light-primary" onClick={handleShowModalAsesor}>
             <i className = "fa fa-lg fa-expand-arrows-alt p-0"></i>
           </button>

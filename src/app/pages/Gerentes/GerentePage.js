@@ -3,6 +3,7 @@ import { toAbsoluteUrl } from "../../../_metronic/_helpers";
 import SVG from "react-inlinesvg";
 import ModalCreate from "../../../_metronic/_partials/gerentes/ModalCreate";
 import ModalEdit from "../../../_metronic/_partials/gerentes/ModalEdit";
+import ModalDetail from "../../../_metronic/_partials/gerentes/ModalDetail";
 import { Accordion, Card, Button } from "react-bootstrap";
 
 export default function GerentePage() {
@@ -14,12 +15,16 @@ export default function GerentePage() {
   const handleCloseModalEdit = () => setShowModalEdit(false);
   const handleShowModalEdit = () => setShowModalEdit(true);
 
+  const [showModalDetail, setShowModalDetail] = useState(false);
+  const handleCloseModalDetail = () => setShowModalDetail(false);
+  const handleShowModalDetail = () => setShowModalDetail(true);
+
   return (
     <div className="row">
       <div className="col-md-12">
         <div className="card">
-        <div className="card-header">
-            <div className="d-flex justify-content-md-between flex-sm-column flex-md-row">
+          <div className="card-header">
+            <div className="d-flex justify-content-between flex-sm-column flex-md-row">
               <h2>Gerentes</h2>
               <div>
                 <button
@@ -37,7 +42,7 @@ export default function GerentePage() {
                     as={Button}
                     variant="link"
                     eventKey="0"
-                    className="btn-filtro btn btn-primary"
+                    className="btn-filtro btn btn-primary mt-1 mt-lg-0"
                   >
                     <i className="fa fa-filter mr-2"></i> Filtro
                   </Accordion.Toggle>
@@ -159,9 +164,12 @@ export default function GerentePage() {
                         >
                           <i className="fa fa-edit"></i>
                         </button>
-                        <a href="/gerente-detalle" className="btn btn-info btn-sm mr-md-2 mt-sm-2">
+                        <button
+                          className="btn btn-info btn-sm mr-md-2 mt-sm-2"
+                          onClick={handleShowModalDetail}
+                        >
                           <i className="fa fa-eye"></i>
-                        </a>
+                        </button>
                         <button className="btn btn-danger btn-sm mt-sm-2">
                           <i className="fa fa-minus"></i>
                         </button>
@@ -176,7 +184,13 @@ export default function GerentePage() {
             show={showModalCreate}
             handleClose={handleCloseModalCreate}
           />
-          <ModalEdit show={showModalEdit} handleClose={handleCloseModalEdit} />
+          <ModalEdit 
+              show={showModalEdit} 
+              handleClose={handleCloseModalEdit} />
+          <ModalDetail
+            show={showModalDetail}
+            handleClose={handleCloseModalDetail}
+          />
         </div>
       </div>
     </div>

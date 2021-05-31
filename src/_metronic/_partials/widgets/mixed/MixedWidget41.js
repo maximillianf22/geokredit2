@@ -1,12 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useMemo } from "react";
-import { Dropdown } from "react-bootstrap";
 import objectPath from "object-path";
 import ApexCharts from "apexcharts";
-import { DropdownCustomToggler, DropdownMenu2 } from "../../dropdowns";
 import { useHtmlClassService } from "../../../layout";
 
-export function MixedWidget4({ className, chartColor = "danger" }) {
+export function MixedWidget41({ className, chartColor = "danger" }) {
   const uiService = useHtmlClassService();
   const layoutProps = useMemo(() => {
     return {
@@ -31,7 +29,7 @@ export function MixedWidget4({ className, chartColor = "danger" }) {
   }, [uiService, chartColor]);
 
   useEffect(() => {
-    const element = document.getElementById("kt_mixed_widget_4_chart");
+    const element = document.getElementById("kt_mixed_widget_7_chart");
 
     if (!element) {
       return;
@@ -49,28 +47,13 @@ export function MixedWidget4({ className, chartColor = "danger" }) {
     <>
       {/* begin::Tiles Widget 1 */}
       <div
-        className={`card card-custom bg-radial-gradient-danger ${className}`}
+        className={`card card-custom bg-radial-gradient-success ${className}`}
       >
         {/* begin::Header */}
         <div className="card-header border-0 pt-5">
           <h3 className="card-title font-weight-bolder text-white">
-            Sales Progress
-          </h3>
-          <div className="card-toolbar">
-            <Dropdown className="dropdown-inline" alignRight>
-              <Dropdown.Toggle
-                className="btn btn-text-white btn-hover-white btn-sm btn-icon border-0"
-                variant="transparent"
-                id="dropdown-toggle-top"
-                as={DropdownCustomToggler}
-              >
-                <i className="ki ki-bold-more-hor" />
-              </Dropdown.Toggle>
-              <Dropdown.Menu className="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-                <DropdownMenu2 />
-              </Dropdown.Menu>
-            </Dropdown>
-          </div>
+            <b className="d-none d-sm-none d-md-block d-lg-block">Estadistica &nbsp;</b>  Semanal
+          </h3> 
         </div>
         {/* end::Header */}
 
@@ -78,43 +61,51 @@ export function MixedWidget4({ className, chartColor = "danger" }) {
         <div className="card-body d-flex flex-column p-0">
           {/* begin::Chart */}
           <div
-            id="kt_mixed_widget_4_chart"
+            id="kt_mixed_widget_7_chart"
             data-color={chartColor}
             style={{ height: "200px", minHeight: "200px" }}
           />
           {/* end::Chart */}
 
           {/* begin::Stats */}
-          <div className="card-spacer bg-white card-rounded flex-grow-1">
+          <div className="card-spacer bg-white card-rounded flex-grow-1 my-aut mt-5x">
             {/* begin::Row */}
             <div className="row m-0">
-              <div className="col px-8 py-6 mr-8">
+              <div className=" col-6 col-md-4 col-lg-4 px-4 py-6">
                 <div className="font-size-sm text-muted font-weight-bold">
-                  Average Sale
+                   Creditos Radicados
                 </div>
-                <div className="font-size-h4 font-weight-bolder">$650</div>
+                <div className="font-size-h4 font-weight-bolder">650</div>
               </div>
-              <div className="col px-8 py-6">
+              <div className=" col-6 col-md-4 col-lg-4 px-4 py-6">
                 <div className="font-size-sm text-muted font-weight-bold">
-                  Commission
+                  Credito Aprobado
                 </div>
-                <div className="font-size-h4 font-weight-bolder">$233,600</div>
+                <div className="font-size-h4 font-weight-bolder">$29,004,000</div>
               </div>
-            </div>
-            {/* end::Row */}
-            {/* begin::Row */}
-            <div className="row m-0">
-              <div className="col px-8 py-6 mr-8">
+              <div className=" col-6 col-md-4 col-lg-4 px-4 py-6">
                 <div className="font-size-sm text-muted font-weight-bold">
-                  Annual Taxes
+                  Credito Solicitado
                 </div>
-                <div className="font-size-h4 font-weight-bolder">$29,004</div>
+                <div className="font-size-h4 font-weight-bolder">$49,004,000</div>
               </div>
-              <div className="col px-8 py-6">
+              <div className=" col-6 col-md-4 col-lg-4 px-4 py-6">
                 <div className="font-size-sm text-muted font-weight-bold">
-                  Annual Income
+                  Visitas Realizadas
                 </div>
-                <div className="font-size-h4 font-weight-bolder">$1,480,00</div>
+                <div className="font-size-h4 font-weight-bolder">3,600</div>
+              </div>
+              <div className=" col-6 col-md-4 col-lg-4 px-4 py-6">
+                <div className="font-size-sm text-muted font-weight-bold">
+                  Visitas Agendadas
+                </div>
+                <div className="font-size-h4 font-weight-bolder">1,480</div>
+              </div>
+              <div className=" col-6 col-md-4 col-lg-4 px-4 py-6">
+                <div className="font-size-sm text-muted font-weight-bold">
+                  Visitas Prospectadas
+                </div>
+                <div className="font-size-h4 font-weight-bolder">980</div>
               </div>
             </div>
             {/* end::Row */}
@@ -132,12 +123,16 @@ function getChartOption(layoutProps) {
   const options = {
     series: [
       {
-        name: "Net Profit",
+        name: "Prospectados",
         data: [35, 65, 75, 55, 45, 60, 55],
       },
       {
-        name: "Revenue",
+        name: "Colocados",
         data: [40, 70, 80, 60, 50, 65, 60],
+      },
+      {
+        name: "Radicados",
+        data: [50, 40, 60, 30, 60, 75, 50],
       },
     ],
     chart: {
@@ -153,7 +148,7 @@ function getChartOption(layoutProps) {
     plotOptions: {
       bar: {
         horizontal: false,
-        columnWidth: ["30%"],
+        columnWidth: ["50%"],
         endingShape: "rounded",
       },
     },
@@ -169,7 +164,7 @@ function getChartOption(layoutProps) {
       colors: ["transparent"],
     },
     xaxis: {
-      categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+      categories: ["Lunes", "Mar", "Mie", "Jue", "Vie", "Sab", "Dom"],
       axisBorder: {
         show: false,
       },
@@ -227,7 +222,7 @@ function getChartOption(layoutProps) {
       },
       y: {
         formatter: function(val) {
-          return "$" + val + " thousands";
+          return  val + " Creditos";
         },
       },
       marker: {

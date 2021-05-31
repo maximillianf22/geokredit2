@@ -3,7 +3,6 @@ import React from "react";
 import {Link} from "react-router-dom";
 import { useLocation } from "react-router";
 import { NavLink } from "react-router-dom";
-import SVG from "react-inlinesvg";
 import { toAbsoluteUrl, checkIsActive } from "../../../../_helpers";
 
 export function HeaderMenu({ layoutProps }) {
@@ -74,6 +73,15 @@ export function HeaderMenu({ layoutProps }) {
             <li className={`menu-item menu-item-rel`}>
                 <NavLink className="menu-link" to="/metas">
                     <span className="menu-text">Metas</span>
+                    {layoutProps.rootArrowEnabled && (<i className="menu-arrow" />)}
+                </NavLink>
+            </li>
+            {/*end::1 Level*/}
+
+            {/*begin::1 Level*/}
+            <li className={`menu-item menu-item-rel`}>
+                <NavLink className="menu-link" to="/usuarios">
+                    <span className="menu-text">Usuarios</span>
                     {layoutProps.rootArrowEnabled && (<i className="menu-arrow" />)}
                 </NavLink>
             </li>
