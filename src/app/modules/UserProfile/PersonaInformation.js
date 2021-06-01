@@ -102,10 +102,10 @@ function PersonaInformation(props) {
       <div className="card-header py-3">
         <div className="card-title align-items-start flex-column">
           <h3 className="card-label font-weight-bolder text-dark">
-            Personal Information
+            Informacion del usuario
           </h3>
           <span className="text-muted font-weight-bold font-size-sm mt-1">
-            Update your personal informaiton
+            Actualice su informacion personal
           </span>
         </div>
         <div className="card-toolbar">
@@ -116,14 +116,14 @@ function PersonaInformation(props) {
               formik.isSubmitting || (formik.touched && !formik.isValid)
             }
           >
-            Save Changes
+            Guardar Cambios
             {formik.isSubmitting}
           </button>
           <Link
             to="/user-profile/profile-overview"
             className="btn btn-secondary"
           >
-            Cancel
+            Cancelar
           </Link>
         </div>
       </div>
@@ -135,11 +135,11 @@ function PersonaInformation(props) {
           <div className="row">
             <label className="col-xl-3"></label>
             <div className="col-lg-9 col-xl-6">
-              <h5 className="font-weight-bold mb-6">Customer Info</h5>
+              <h5 className="font-weight-bold mb-6">Informacion del usuario</h5>
             </div>
           </div>
           <div className="form-group row">
-            <label className="col-xl-3 col-lg-3 col-form-label">Avatar</label>
+            <label className="col-xl-3 col-lg-3 col-form-label">Foto</label>
             <div className="col-lg-9 col-xl-6">
               <div
                 className="image-input image-input-outline"
@@ -191,13 +191,13 @@ function PersonaInformation(props) {
                 </span>
               </div>
               <span className="form-text text-muted">
-                Allowed file types: png, jpg, jpeg.
+                Formatos permitidos: png, jpg, jpeg.
               </span>
             </div>
           </div>
           <div className="form-group row">
             <label className="col-xl-3 col-lg-3 col-form-label">
-              First Name
+             Nombre
             </label>
             <div className="col-lg-9 col-xl-6">
               <input
@@ -218,7 +218,7 @@ function PersonaInformation(props) {
           </div>
           <div className="form-group row">
             <label className="col-xl-3 col-lg-3 col-form-label">
-              Last Name
+              Apellido
             </label>
             <div className="col-lg-9 col-xl-6">
               <input
@@ -237,7 +237,7 @@ function PersonaInformation(props) {
           </div>
           <div className="form-group row">
             <label className="col-xl-3 col-lg-3 col-form-label">
-              Company Name
+              Oficina
             </label>
             <div className="col-lg-9 col-xl-6">
               <input
@@ -247,21 +247,17 @@ function PersonaInformation(props) {
                 name="companyName"
                 {...formik.getFieldProps("companyName")}
               />
-              <span className="form-text text-muted">
-                If you want your invoices addressed to a company. Leave blank to
-                use your full name.
-              </span>
             </div>
           </div>
           <div className="row">
             <label className="col-xl-3"></label>
             <div className="col-lg-9 col-xl-6">
-              <h5 className="font-weight-bold mt-10 mb-6">Contact Info</h5>
+              <h5 className="font-weight-bold mt-10 mb-6">Informacion de contacto</h5>
             </div>
           </div>
           <div className="form-group row">
             <label className="col-xl-3 col-lg-3 col-form-label">
-              Contact Phone
+              Telefono
             </label>
             <div className="col-lg-9 col-xl-6">
               <div className="input-group input-group-lg input-group-solid">
@@ -285,14 +281,11 @@ function PersonaInformation(props) {
                   {formik.errors.phone}
                 </div>
               ) : null}
-              <span className="form-text text-muted">
-                We'll never share your phone with anyone else.
-              </span>
             </div>
           </div>
           <div className="form-group row">
             <label className="col-xl-3 col-lg-3 col-form-label">
-              Email Address
+              Correo
             </label>
             <div className="col-lg-9 col-xl-6">
               <div className="input-group input-group-lg input-group-solid">
@@ -314,27 +307,6 @@ function PersonaInformation(props) {
               {formik.touched.email && formik.errors.email ? (
                 <div className="invalid-feedback display-block">
                   {formik.errors.email}
-                </div>
-              ) : null}
-            </div>
-          </div>
-          <div className="form-group row">
-            <label className="col-xl-3 col-lg-3 col-form-label">
-              Company Site
-            </label>
-            <div className="col-lg-9 col-xl-6">
-              <div className="input-group input-group-lg input-group-solid">
-                <input
-                  type="text"
-                  placeholder="https://keenthemes.com"
-                  className={`form-control form-control-lg form-control-solid`}
-                  name="website"
-                  {...formik.getFieldProps("website")}
-                />
-              </div>
-              {formik.touched.website && formik.errors.website ? (
-                <div className="invalid-feedback display-block">
-                  {formik.errors.website}
                 </div>
               ) : null}
             </div>

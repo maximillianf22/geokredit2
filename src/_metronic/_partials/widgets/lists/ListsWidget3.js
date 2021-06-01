@@ -1,5 +1,5 @@
 /* eslint-disable no-script-url,jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
+import React from "react";
 import SVG from "react-inlinesvg";
 import {toAbsoluteUrl} from "../../../_helpers";
 
@@ -29,7 +29,7 @@ export function ListsWidget3({ className }) {
 
             <div className="d-flex flex-column font-weight-bold w-75">
               <a
-                href="#"
+                href="!#"
                 className="text-primary text-hover-dark font-size-lg"
               >
                 Alejandro Fernandez 
@@ -40,7 +40,7 @@ export function ListsWidget3({ className }) {
                 Junior
               </span>
             </div>
-            <div className="d-flex flex-column w-50 mr-2">
+            <div className="d-flex flex-column w-33 mr-2 offcanvas-mobile">
               <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
                 <span className="text-muted mr-2 font-size-sm">
                   Radicados
@@ -73,7 +73,7 @@ export function ListsWidget3({ className }) {
 
             <div className="d-flex flex-column font-weight-bold w-75">
               <a
-                href="#"
+                href="!#"
                 className="text-primary text-hover-dark font-size-lg"
               >
                 Alejandro Fernandez 
@@ -84,7 +84,7 @@ export function ListsWidget3({ className }) {
                 Junior
               </span>
             </div>
-            <div className="d-flex flex-column w-50 mr-2">
+            <div className="d-flex flex-column w-33 mr-2 offcanvas-mobile">
               <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
                 <span className="text-muted mr-2 font-size-sm">
                   Radicados
@@ -117,7 +117,7 @@ export function ListsWidget3({ className }) {
 
             <div className="d-flex flex-column font-weight-bold w-75">
               <a
-                href="#"
+                href="!#"
                 className="text-primary text-hover-dark font-size-lg"
               >
                 Alejandro Fernandez 
@@ -128,7 +128,7 @@ export function ListsWidget3({ className }) {
                 Gold
               </span>
             </div>
-            <div className="d-flex flex-column w-50 mr-2">
+            <div className="d-flex flex-column w-33 mr-2 offcanvas-mobile">
               <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
                 <span className="text-muted mr-2 font-size-sm">
                   Radicados
@@ -161,7 +161,7 @@ export function ListsWidget3({ className }) {
 
             <div className="d-flex flex-column font-weight-bold w-75">
               <a
-                href="#"
+                href="!#"
                 className="text-primary text-hover-dark font-size-lg"
               >
                 Alejandro Fernandez 
@@ -172,7 +172,7 @@ export function ListsWidget3({ className }) {
                 Gold
               </span>
             </div>
-            <div className="d-flex flex-column w-50 mr-2">
+            <div className="d-flex flex-column w-33 mr-2 offcanvas-mobile">
               <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
                 <span className="text-muted mr-2 font-size-sm">
                   Radicados
@@ -205,7 +205,7 @@ export function ListsWidget3({ className }) {
 
             <div className="d-flex flex-column font-weight-bold w-75">
               <a
-                href="#"
+                href="!#"
                 className="text-primary text-hover-dark font-size-lg"
               >
                 Alejandro Fernandez 
@@ -216,7 +216,7 @@ export function ListsWidget3({ className }) {
                 Elite
               </span>
             </div>
-            <div className="d-flex flex-column w-50 mr-2">
+            <div className="d-flex flex-column w-33 mr-2 offcanvas-mobile">
               <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
                 <span className="text-muted mr-2 font-size-sm">
                   Radicados

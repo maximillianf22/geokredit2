@@ -82,7 +82,7 @@ export function Map() {
                         </label>
                         <div className="d-flex flex-column flex-grow-1">
                           <a
-                            href="#"
+                            href="!#"
                             className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
                           >
                             Oficina Barranquilla
@@ -105,7 +105,7 @@ export function Map() {
                         </label>
                         <div className="d-flex flex-column flex-grow-1">
                           <a
-                            href="#"
+                            href="!#"
                             className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
                           >
                             Oficina Bogota
@@ -123,7 +123,7 @@ export function Map() {
                         </label>
                         <div className="d-flex flex-column flex-grow-1">
                           <a
-                            href="#"
+                            href="!#"
                             className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
                           >
                             Oficina Medellin
@@ -141,7 +141,7 @@ export function Map() {
                         </label>
                         <div className="d-flex flex-column flex-grow-1">
                           <a
-                            href="#"
+                            href="!#"
                             className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
                           >
                             Oficina Cali
@@ -159,7 +159,7 @@ export function Map() {
                         </label>
                         <div className="d-flex flex-column flex-grow-1">
                           <a
-                            href="#"
+                            href="!#"
                             className="text-dark-75 text-hover-primary  font-size-sm font-weight-bold font-size-lg mb-1"
                           >
                             Oficina Pereira
@@ -205,7 +205,7 @@ export function Map() {
                     </div>
                     <div className="d-flex flex-column font-weight-bold w-75">
                       <a
-                        href="#"
+                        href="!#"
                         className="text-success text-hover-dark h6 font-weight-bold"
                       >
                         Meta de colocación

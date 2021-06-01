@@ -1,5 +1,5 @@
-import React, { useMemo, useEffect, useState } from "react";
-import FullCalendario, { formatDate } from './FullCalendar'
+import React, { useEffect, useState } from "react";
+import FullCalendario from './FullCalendar'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
@@ -14,7 +14,7 @@ import InfoWindowCustom3 from './InfoWindow3';
 import InfoWindowCustom4 from './InfoWindow4';
 
 export default function ModalAsesor({show, handleClose}){
-  const [mapProps, setMapProps] = useState({
+  const [mapProps] = useState({
     zoom: 18,
     center: { lat: 4.61971, lng: -74.09975 },
   })
@@ -40,13 +40,6 @@ export default function ModalAsesor({show, handleClose}){
     }
   }, [isMapLoaded])
 
-  const [showInfo, setShowInfo] = useState({
-    showingInfoWindow3: false,
-    showingInfoWindow4: false,
-    activeMarker: {},
-    selectedPlace: {},
-  })
-
   const popoverMap3 = (
     <Popover id="popover-basic" style={{ position: 'fixed' }}>
       <Popover.Content>
@@ -69,9 +62,9 @@ export default function ModalAsesor({show, handleClose}){
           <Modal.Title>Asesor</Modal.Title>
           </Modal.Header>
         <Modal.Body className="p-0 h-570">
-            <Tab.Container id="left-tabs-example" defaultActiveKey="resumen">
-            <div className="nav-position-modal">
-              <Nav className="bg-secondary rounded" variant="pills" size="sm">
+            <Tab.Container id="right-tabs-example" defaultActiveKey="resumen">
+            <div className=" bg-white text-right py-2 pull-right text-right align-items-center d-flex ml-auto">
+              <Nav className=" rounded  bg-white text-right p-2 pull-right text-right align-items-center d-flex ml-auto" variant="pills" size="sm">
                 <Nav.Item >
                   <Nav.Link className="py-2 px-4" eventKey="resumen">Resumen</Nav.Link>
                 </Nav.Item>

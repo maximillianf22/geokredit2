@@ -2,8 +2,6 @@
 import React, { useMemo, useEffect } from "react";
 import objectPath from "object-path";
 import ApexCharts from "apexcharts";
-import SVG from "react-inlinesvg";
-import { toAbsoluteUrl } from "../../../_helpers";
 import { useHtmlClassService } from "../../../layout";
 import { KTUtil } from "../../../_assets/js/components/util";
 
@@ -58,30 +56,30 @@ export function StatsWidget10({ className }) {
         {/* begin::Body */}
         <div className="card-body p-0">
           <div className="d-flex align-items-center justify-content-between px-8 pt-8 flex-grow-1">
-              <span className="symbol-label h4 font-weight-bold w-255">
-                  Meta Semanal Colocados <br/>
-                  <small>$150.000.000</small><br/>
-                  <small>3 Dias restantes</small> <br/>
-                  <div className="d-flex flex-column w-100 mr-2">
-                      <div className="d-flex align-items-center justify-content-between mb-2">
-                        <span className="text-muted mr-2 font-size-sm font-weight-bold">
+            <span className="symbol-label h4 font-weight-bold w-255">
+              Meta Semanal Colocados <br />
+              <small>$150.000.000</small><br />
+              <small>3 Dias restantes</small> <br />
+              <div className="d-flex flex-column w-100 mr-2 offcanvas-mobile">
+                <div className="d-flex align-items-center justify-content-between mb-2">
+                  <span className="text-muted mr-2 font-size-sm font-weight-bold">
+                  </span>
+                  <span className="text-muted font-size-sm font-weight-bold">
+                    65%
                         </span>
-                        <span className="text-muted font-size-sm font-weight-bold">
-                          65%
-                        </span>
-                      </div>
-                      <div className="progress progress-xs w-100">
-                        <div
-                          className="progress-bar bg-info"
-                          role="progressbar"
-                          style={{ width: "65%" }}
-                          aria-valuenow="50"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-              </span>
+                </div>
+                <div className="progress progress-xs w-100">
+                  <div
+                    className="progress-bar bg-info"
+                    role="progressbar"
+                    style={{ width: "65%" }}
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </span>
             <div className="d-flex flex-column text-right">
               <span className="text-dark-75 font-weight-bolder font-size-h3 mt-5">
                 750,000,000$
@@ -213,7 +211,7 @@ function getChartOption(layoutProps, height) {
         fontFamily: layoutProps.fontFamily,
       },
       y: {
-        formatter: function(val) {
+        formatter: function (val) {
           return "$" + val + " thousands";
         },
       },

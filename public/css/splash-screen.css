@@ -44,6 +44,18 @@ body {
   .aside-fixed .aside {
     top: 75px !important;
   }
+  
+}
+
+@media screen and (max-width: 770px) {
+  .fc-dayGridMonth-button, .fc-timeGridWeek-button, .fc-timeGridDay-button {
+    display: none !important;
+  }
+
+  .fc-scrollgrid-sync-table {
+    width: 100% !important;
+    height: 420px !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -123,17 +135,17 @@ body {
 }
 
 .fc-scrollgrid-liquid {
-  height: 355px !important;
+  height: 440px !important;
 }
 
 .modal-calendar {
-  height: 540px !important;
+  height: 550px !important;
 }
 
 .nav-position {
   position: absolute;
-  right: 40px;
-  top: 25px;
+  right: 37px;
+  top: 19px;
   z-index: 80;
 }
 
@@ -182,7 +194,7 @@ i {
 
 .fc .fc-scrollgrid-liquid {
   height: 100%;
-  height: 425px !important;
+  height: 451px !important;
 }
 
 .fc-daygrid-body {
@@ -190,12 +202,16 @@ i {
 }
 
 .h-570 {
-  height: 540px;
+  height: 650px;
+}
+
+.w-33 {
+  width: 31%;
 }
 
 .fc-scrollgrid-sync-table {
   width: 100% !important;
-  height: 415px !important;
+  height: 424px !important;
 }
 
 .w-255 {

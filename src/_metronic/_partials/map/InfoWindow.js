@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function InfoWindowCustom({handleShowModalCalendar, handleShowModalAsesor, handleShowModalRoutes, handleShowModalPerfil}) {
 	return(
@@ -24,7 +24,7 @@ function InfoWindowCustom({handleShowModalCalendar, handleShowModalAsesor, handl
       <div className = "col-md-12 mb-4">
         <div className="d-flex flex-column font-weight-bold w-75">
             <a
-              href="#"
+              href="!#"
               className="text-primary text-hover-dark font-size-lg font-weight-bold text-nowrap"
             >
               Alejandro Fernandez

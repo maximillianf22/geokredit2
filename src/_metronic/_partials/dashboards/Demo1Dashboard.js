@@ -19,7 +19,7 @@ export function Demo1Dashboard() {
         </div>
         <div className="col-xl-8">
           <Tab.Container id="left-tabs-example" defaultActiveKey="mes">
-            <div className="nav-position">
+            <div className="nav-position offcanvas-mobile">
               <Nav className="bg-secondary rounded" variant="pills" size="sm">
                 <Nav.Item >
                   <Nav.Link className="py-2 px-4" eventKey="mes">Mes</Nav.Link>
@@ -62,7 +62,7 @@ export function Demo1Dashboard() {
             </div>
             <div className="col-lg-6 col-xxl-6 order-1 order-xxl-2">
             <Tab.Container id="left-tabs-example" defaultActiveKey="asesores">
-              <div className="nav-position">
+              <div className="nav-position offcanvas-mobile">
                 <Nav className="bg-secondary rounded" variant="pills" size="sm">
                   <Nav.Item >
                     <Nav.Link className="py-2 px-4" eventKey="asesores">Asesores</Nav.Link>
@@ -81,6 +81,7 @@ export function Demo1Dashboard() {
                 </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
+            <ListsWidget4 className="gutter-b d-block d-sm-block d-lg-none d-md-none" />
             </div>
           </div>
         </div>

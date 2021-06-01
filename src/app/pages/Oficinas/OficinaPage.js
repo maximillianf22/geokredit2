@@ -129,12 +129,9 @@ export default function OficinaPage() {
                       </div>
                     </td>
                     <td className=" text-center">
-                      <a
-                        href="#"
-                        className="text-dark font-weight-bolder text-hover-primary mb-1 font-size-lg"
-                      >
+                      <span className="text-dark font-weight-bolder text-hover-primary mb-1 font-size-lg">
                         Developapp
-                      </a>
+                      </span>
                       <span className="text-muted font-weight-bold d-block">
                         Officine 306
                       </span>

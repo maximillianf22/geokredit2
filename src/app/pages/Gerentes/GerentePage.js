@@ -123,7 +123,7 @@ export default function GerentePage() {
                 <tbody>
                   <tr>
                     <td className="pl-0">
-                      <div className="symbol symbol-50 symbol-light mr-2 mt-2">
+                      <div className="symbol symbol-50 symbol-light">
                         <span className="symbol-label">
                           <SVG
                             className="h-75 align-self-end"

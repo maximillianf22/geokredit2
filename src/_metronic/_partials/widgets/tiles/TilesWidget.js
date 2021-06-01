@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
-export function TilesWidget({}) {
+export function TilesWidget() {
   return (
     <>
       {/* begin::Tiles Widget 1 */}
@@ -22,7 +22,7 @@ export function TilesWidget({}) {
             </div>
             <div className="w-100 pr-10">
               <a
-                href="#"
+                href="!#"
                 className="font-weight-bolder font-size-h6 text-dark-75 text-hover-primary"
               >
                 Oficina Buenavista
@@ -71,7 +71,7 @@ export function TilesWidget({}) {
                 </div>
                 <div>
                   <a
-                    href="#"
+                    href="!#"
                     className="font-size-h6 text-primary text-hover-dark font-weight-bolder"
                   >
                     Asesores
@@ -99,7 +99,7 @@ export function TilesWidget({}) {
                 </div>
                 <div>
                   <a
-                    href="#"
+                    href="!#"
                     className="font-size-h6 text-primary text-hover-dark font-weight-bolder"
                   >
                     Meta Mensual
@@ -127,7 +127,7 @@ export function TilesWidget({}) {
                 </div>
                 <div>
                   <a
-                    href="#"
+                    href="!#"
                     className="font-size-h6 text-primary text-hover-dark font-weight-bolder"
                   >
                     Efectividad

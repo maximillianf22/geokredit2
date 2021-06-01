@@ -1,18 +1,22 @@
 import React, { Suspense, lazy } from "react";
 import { Redirect, Switch, Route } from "react-router-dom";
 import { LayoutSplashScreen, ContentRoute } from "../_metronic/layout";
-import { MapPage } from "./pages/MapPage";
+import { MapPage } from "./pages/Mapa/MapPage";
 import UsuariosPage from './pages/Usuarios/UsuariosPage'
+import LogPage from './pages/Usuarios/LogPage'
 import OficinaPage from './pages/Oficinas/OficinaPage'
 import OficinaDetail from './pages/Oficinas/OficinaDetail'
 import AsesorPage from './pages/Asesores/AsesorPage'
 import AsesorDetail from './pages/Asesores/AsesorDetail'
 import GerentePage from './pages/Gerentes/GerentePage'
-import CalendarPage from './pages/CalendarPage'
-import RolesPage from './pages/RolesPage'
+import CalendarPage from './pages/Calendario/CalendarPage'
+import RolesPage from './pages/Roles/RolesPage'
+import ParametrosPage from './pages/Parametros/ParametrosPage'
+import InformesPage from './pages/Informes/InformesPage'
+import CreditosPage from './pages/Creditos/CreditosPage'
 
-import { MyPage } from "./pages/MyPage";
-import { DashboardPage } from "./pages/DashboardPage";
+import { ConfiguracionPage } from "./pages/Configuracion/ConfiguracionPage";
+import { DashboardPage } from "./pages/Dashboard/DashboardPage";
 
 const UserProfilepage = lazy(() =>
   import("./modules/UserProfile/UserProfilePage")
@@ -35,13 +39,17 @@ export default function BasePage() {
         <ContentRoute path="/mapa" component={MapPage} />
         <ContentRoute path="/calendario" component={CalendarPage} />
         <ContentRoute path="/roles" component={RolesPage} />
+        <ContentRoute path="/parametros" component={ParametrosPage} />
         <ContentRoute path="/oficina" component={OficinaPage} />
         <ContentRoute path="/oficina-detalle" component={OficinaDetail} />
         <ContentRoute path="/asesor" component={AsesorPage} />
         <ContentRoute path="/asesor-detalle" component={AsesorDetail} />
         <ContentRoute path="/gerente" component={GerentePage} />
-        <ContentRoute path="/my-page" component={MyPage} />
+        <ContentRoute path="/configuracion" component={ConfiguracionPage} />
         <ContentRoute path="/usuarios" component={UsuariosPage} />
+        <ContentRoute path="/log" component={LogPage} />
+        <ContentRoute path="/informes" component={InformesPage} />
+        <ContentRoute path="/creditos" component={CreditosPage} />
         <Route path="/user-profile" component={UserProfilepage} />
         <Redirect to="error/error-v1" />
       </Switch>

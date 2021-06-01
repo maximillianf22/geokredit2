@@ -36,7 +36,7 @@ export function ListsWidget1({ className }) {
                 Zona Principal
               </span>
             </div>
-            <div className="d-flex flex-column w-50 mr-2">
+            <div className="d-flex flex-column w-33 mr-2 offcanvas-mobile">
               <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
                 <span className="text-muted mr-2 font-size-sm">
                   Radicados
@@ -79,7 +79,7 @@ export function ListsWidget1({ className }) {
                 Zona Principal
               </span>
             </div>
-            <div className="d-flex flex-column w-50 mr-2">
+            <div className="d-flex flex-column w-33 mr-2 offcanvas-mobile">
               <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
                 <span className="text-muted mr-2 font-size-sm">
                   Radicados
@@ -122,7 +122,7 @@ export function ListsWidget1({ className }) {
                 Zona Principal
               </span>
             </div>
-            <div className="d-flex flex-column w-50 mr-2">
+            <div className="d-flex flex-column w-33 mr-2 offcanvas-mobile">
               <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
                 <span className="text-muted mr-2 font-size-sm">
                   Radicados
@@ -166,7 +166,7 @@ export function ListsWidget1({ className }) {
                 Zona Principal
               </span>
             </div>
-            <div className="d-flex flex-column w-50 mr-2">
+            <div className="d-flex flex-column w-33 mr-2 offcanvas-mobile">
               <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
                 <span className="text-muted mr-2 font-size-sm">
                   Radicados
@@ -210,7 +210,7 @@ export function ListsWidget1({ className }) {
                 Zona Principal
               </span>
             </div>
-            <div className="d-flex flex-column w-50 mr-2">
+            <div className="d-flex flex-column w-33 mr-2 offcanvas-mobile">
               <div className="d-flex align-items-center justify-content-between mb-2 text-nowrap">
                 <span className="text-muted mr-2 font-size-sm">
                   Radicados

@@ -1,11 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useMemo, useState } from "react";
-import SVG from "react-inlinesvg";
-import { Dropdown } from "react-bootstrap";
 import objectPath from "object-path";
 import ApexCharts from "apexcharts";
-import { toAbsoluteUrl } from "../../../_helpers";
-import { DropdownCustomToggler, DropdownMenu4 } from "../../dropdowns";
 import { useHtmlClassService } from "../../../layout";
 
 export function TilesWidget1({ className, chartColor = "success" }) {
@@ -65,7 +61,7 @@ export function TilesWidget1({ className, chartColor = "success" }) {
               <div className="font-size-sm text-muted mt-2">Barranquilla</div>
             </div>
           </div>
-          <div className="card-toolbar">
+          <div className="card-toolbar offcanvas-mobile">
           <div className="card-toolbar tb-nav bg-secondary rounded">
             <ul className="nav nav-pills nav-pills-sm nav-dark-75">
               <li className="nav-item">
@@ -131,7 +127,7 @@ export function TilesWidget1({ className, chartColor = "success" }) {
                 </div>
                 <div>
                   <a
-                    href="#"
+                    href="!#"
                     className="font-size-h6 text-primary text-hover-dark font-weight-bolder"
                   >
                     Asesores
@@ -159,7 +155,7 @@ export function TilesWidget1({ className, chartColor = "success" }) {
                 </div>
                 <div>
                   <a
-                    href="#"
+                    href="!#"
                     className="font-size-h6 text-primary text-hover-dark font-weight-bolder"
                   >
                     Meta Mensual
@@ -187,7 +183,7 @@ export function TilesWidget1({ className, chartColor = "success" }) {
                 </div>
                 <div>
                   <a
-                    href="#"
+                    href="!#"
                     className="font-size-h6 text-primary text-hover-dark font-weight-bolder"
                   >
                     Efectividad

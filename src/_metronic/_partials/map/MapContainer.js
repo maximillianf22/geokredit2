@@ -7,7 +7,6 @@ import officeWarning from './icons/office-warning.svg';
 import asesorActive from './icons/asesor-active.svg';
 import asesorInactive from './icons/asesor-inactive.svg';
 
-
 import ModalCalendar from './ModalCalendar';
 import ModalPerfil from './ModalPerfil';
 import ModalAsesor from './ModalAsesor';
@@ -32,10 +31,7 @@ function MapContainer(props) {
       visibleClients: true
     })
   }
-  const routesCoords = [
-    { lat: 4.60971, lng: -74.08175 },
-    { lat: 10.96854, lng: -74.78132 },
-  ];
+
   const [mapProps, setMapProps] = useState({
     zoom: 6,
     center: { lat: 4.570868, lng: -74.297333 },
@@ -81,7 +77,8 @@ function MapContainer(props) {
   const popover = (
     <Popover id="popover-basic" style={{ position: 'fixed' }}>
       <Popover.Content>
-        <InfoWindowCustom handleShowModalCalendar={handleShowModalCalendar}
+        <InfoWindowCustom 
+          handleShowModalCalendar={handleShowModalCalendar}
           handleShowModalPerfil={handleShowModalPerfil} handleShowModalRoutes = {handleShowModalRoutes}
           handleShowModalAsesor = {handleShowModalAsesor}/>
       </Popover.Content>
@@ -90,8 +87,8 @@ function MapContainer(props) {
   const popoverMap = (
     <Popover id="popover-basic" style={{ position: 'fixed' }}>
       <Popover.Content>
-        <InfoWindowCustom2 handleShowModalOficina={handleShowModalOficina}
-          handleShowModalOficina={handleShowModalOficina} />
+        <InfoWindowCustom2 
+        handleShowModalOficina={handleShowModalOficina} />
       </Popover.Content>
     </Popover>
   );

@@ -2,7 +2,7 @@
 import React from "react";
 import { Accordion, Card, Button } from "react-bootstrap";
 
-export function ListsWidget8({ }) {
+export function ListsWidget8() {
   return (
     <>
       <div

@@ -24,7 +24,7 @@ export default function ModalDetail({ show, handleClose }) {
                 </div>
                 <div>
                   <a
-                    href="#"
+                    href="!#"
                     className="font-weight-bold text-center font-size-h3 text-dark-75 text-hover-primary"
                   >
                     Maximillian Fernandez
@@ -55,7 +55,7 @@ export default function ModalDetail({ show, handleClose }) {
               <div className="pt-8 pb-6">
                 <div className="d-flex align-items-center justify-content-between mb-2">
                   <span className="font-weight-bold mr-2">Correo:</span>
-                  <a href="#" className="text-muted text-hover-primary">
+                  <a href="!#" className="text-muted text-hover-primary">
                     matt@geokredit.com
                   </a>
                 </div>

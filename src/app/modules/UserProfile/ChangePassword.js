@@ -83,17 +83,17 @@ function ChangePassword(props) {
   });
 
   return (
-    <form className="card card-custom" onSubmit={formik.handleSubmit}>
+    <form className="card card-custom card-stretch" onSubmit={formik.handleSubmit}>
       {loading && <ModalProgressBar />}
 
       {/* begin::Header */}
       <div className="card-header py-3">
         <div className="card-title align-items-start flex-column">
           <h3 className="card-label font-weight-bolder text-dark">
-            Change Password
+            Cambio de contraseña
           </h3>
           <span className="text-muted font-weight-bold font-size-sm mt-1">
-            Change your account password
+            Cambia la contraseña de tu cuenta
           </span>
         </div>
         <div className="card-toolbar">
@@ -104,14 +104,14 @@ function ChangePassword(props) {
               formik.isSubmitting || (formik.touched && !formik.isValid)
             }
           >
-            Save Changes
+            Guardar Cambios
             {formik.isSubmitting}
           </button>
           <Link
             to="/user-profile/profile-overview"
             className="btn btn-secondary"
           >
-            Cancel
+            Cancelar
           </Link>
         </div>
       </div>
@@ -132,12 +132,6 @@ function ChangePassword(props) {
                   ></SVG>{" "}
                 </span>
               </div>
-              <div className="alert-text font-weight-bold">
-                Configure user passwords to expire periodically. Users will need
-                warning that their passwords are going to expire,
-                <br />
-                or they might inadvertently get locked out of the system!
-              </div>
               <div className="alert-close" onClick={() => setisError(false)}>
                 <button
                   type="button"
@@ -155,12 +149,12 @@ function ChangePassword(props) {
           {/* end::Alert */}
           <div className="form-group row">
             <label className="col-xl-3 col-lg-3 col-form-label text-alert">
-              Current Password
+              Contraseña Actual
             </label>
             <div className="col-lg-9 col-xl-6">
               <input
                 type="password"
-                placeholder="Current Password"
+                placeholder="Contraseña actual"
                 className={`form-control form-control-lg form-control-solid mb-2 ${getInputClasses(
                   "currentPassword"
                 )}`}
@@ -173,18 +167,18 @@ function ChangePassword(props) {
                   {formik.errors.currentPassword}
                 </div>
               ) : null}
-              <a href="#" className="text-sm font-weight-bold">
-                Forgot password ?
+              <a href="!#" className="text-sm font-weight-bold">
+                Olvido su contraseña
               </a>
             </div>
           </div>
           <div className="form-group row">
             <label className="col-xl-3 col-lg-3 col-form-label text-alert">
-              New Password
+              Nueva Contraseña
             </label>
             <div className="col-lg-9 col-xl-6">
               <input
-                type="password"
+                type="Contraseña"
                 placeholder="New Password"
                 className={`form-control form-control-lg form-control-solid ${getInputClasses(
                   "password"
@@ -199,12 +193,12 @@ function ChangePassword(props) {
           </div>
           <div className="form-group row">
             <label className="col-xl-3 col-lg-3 col-form-label text-alert">
-              Verify Password
+              Confirmar contraseña
             </label>
             <div className="col-lg-9 col-xl-6">
               <input
                 type="password"
-                placeholder="Verify Password"
+                placeholder="Confirmar"
                 className={`form-control form-control-lg form-control-solid ${getInputClasses(
                   "cPassword"
                 )}`}

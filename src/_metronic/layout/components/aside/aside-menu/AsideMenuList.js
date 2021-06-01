@@ -66,11 +66,11 @@ export function AsideMenuList({ layoutProps }) {
           className={`menu-item ${getMenuItemActive("/roles", false)}`}
           aria-haspopup="true"
         >
-          <NavLink className="menu-link" to="/roles">
+          <NavLink className="menu-link" to="/usuarios">
             <span className="svg-icon menu-icon">
               <SVG src={toAbsoluteUrl("/media/svg/icons/General/User.svg")} />
             </span>
-            <span className="menu-text">Roles y Permisos</span>
+            <span className="menu-text">Usuarios</span>
           </NavLink>
         </li>
         {/*end::1 Level*/}
@@ -85,20 +85,6 @@ export function AsideMenuList({ layoutProps }) {
               <SVG src={toAbsoluteUrl("/media/svg/icons/Code/Settings4.svg")} />
             </span>
             <span className="menu-text">Configuracion</span>
-          </NavLink>
-        </li>
-        {/*end::1 Level*/}
-
-        {/*begin::1 Level*/}
-        <li
-          className={`menu-item ${getMenuItemActive("/alertas", false)}`}
-          aria-haspopup="true"
-        >
-          <NavLink className="menu-link" to="/alertas">
-            <span className="svg-icon menu-icon">
-              <SVG src={toAbsoluteUrl("/media/svg/icons/Code/Warning-2.svg")} />
-            </span>
-            <span className="menu-text">Alertas</span>
           </NavLink>
         </li>
         {/*end::1 Level*/}

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
+import React from "react";
 import { Accordion, Card, Button } from "react-bootstrap";
 
 export function BaseTablesWidget1({ className }) {
@@ -123,7 +123,7 @@ export function BaseTablesWidget1({ className }) {
                   <td className="text-nowrap">
                     <span>
                       <a
-                        href="#"
+                        href="!#"
                         data-toggle="tooltip"
                         data-placement="top"
                         title=""
@@ -149,7 +149,7 @@ export function BaseTablesWidget1({ className }) {
                   <td className="text-nowrap">
                     <span>
                       <a
-                        href="#"
+                        href="!#"
                         data-toggle="tooltip"
                         data-placement="top"
                         title=""
@@ -175,7 +175,7 @@ export function BaseTablesWidget1({ className }) {
                   <td className="text-nowrap">
                     <span>
                       <a
-                        href="#"
+                        href="!#"
                         data-toggle="tooltip"
                         data-placement="top"
                         title=""
@@ -201,7 +201,7 @@ export function BaseTablesWidget1({ className }) {
                   <td className="text-nowrap">
                     <span>
                       <a
-                        href="#"
+                        href="!#"
                         data-toggle="tooltip"
                         data-placement="top"
                         title=""
@@ -227,7 +227,7 @@ export function BaseTablesWidget1({ className }) {
                   <td className="text-nowrap">
                     <span>
                       <a
-                        href="#"
+                        href="!#"
                         data-toggle="tooltip"
                         data-placement="top"
                         title=""
@@ -253,7 +253,7 @@ export function BaseTablesWidget1({ className }) {
                   <td className="text-nowrap">
                     <span>
                       <a
-                        href="#"
+                        href="!#"
                         data-toggle="tooltip"
                         data-placement="top"
                         title=""
@@ -279,7 +279,7 @@ export function BaseTablesWidget1({ className }) {
                   <td className="text-nowrap">
                     <span>
                       <a
-                        href="#"
+                        href="!#"
                         data-toggle="tooltip"
                         data-placement="top"
                         title=""
@@ -305,7 +305,7 @@ export function BaseTablesWidget1({ className }) {
                   <td className="text-nowrap">
                     <span>
                       <a
-                        href="#"
+                        href="!#"
                         data-toggle="tooltip"
                         data-placement="top"
                         title=""
@@ -331,7 +331,7 @@ export function BaseTablesWidget1({ className }) {
                   <td className="text-nowrap">
                     <span>
                       <a
-                        href="#"
+                        href="!#"
                         data-toggle="tooltip"
                         data-placement="top"
                         title=""

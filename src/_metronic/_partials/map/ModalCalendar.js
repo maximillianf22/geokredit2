@@ -1,5 +1,5 @@
 import React from "react";
-import FullCalendario, { formatDate } from './FullCalendar'
+import FullCalendario from './FullCalendar'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'

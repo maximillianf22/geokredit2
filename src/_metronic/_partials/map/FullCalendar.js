@@ -1,9 +1,8 @@
 import React from 'react'
-import FullCalendar, { formatDate } from '@fullcalendar/react'
+import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
-import { Calendar } from '@fullcalendar/core';
 import es from '@fullcalendar/core/locales/es';
 import { INITIAL_EVENTS, createEventId } from './FullCalendarEvent'
 
@@ -22,7 +21,7 @@ export default class FullCalendario extends React.Component {
           <FullCalendar
             plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
             headerToolbar={{
-              left: 'prev,next today',
+              left: 'prev,next',
               center: 'title',
               right: 'dayGridMonth,timeGridWeek,timeGridDay',
               

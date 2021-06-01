@@ -139,7 +139,7 @@ function Login(props) {
             </div>
           ) : null}
         </div>
-        <div className="form-group fv-plugins-icon-container">
+        <div className="form-group input-group fv-plugins-icon-container">
           <input
             placeholder="Password"
             type="password"
@@ -149,6 +149,9 @@ function Login(props) {
             name="password"
             {...formik.getFieldProps("password")}
           />
+          <div  className="input-group-prepend">
+          <div  className="input-group-text" style={{ border: "0px" }}><i className="fa fa-eye fa-lg"></i></div>
+        </div>
           {formik.touched.password && formik.errors.password ? (
             <div className="fv-plugins-message-container">
               <div className="fv-help-block">{formik.errors.password}</div>

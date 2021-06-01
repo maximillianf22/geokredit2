@@ -1,7 +1,5 @@
 /* eslint-disable no-script-url,jsx-a11y/anchor-is-valid */
 import React, { useEffect } from "react";
-import { Dropdown } from "react-bootstrap";
-import { DropdownCustomToggler, DropdownMenu1 } from "../../dropdowns";
 import { shallowEqual, useSelector } from "react-redux";
 
 export function ListsWidget9({ className }) {
@@ -28,7 +26,7 @@ export function ListsWidget9({ className }) {
           </div>
           <div className="w-50">
             <a
-              href="#"
+              href="!#"
               className="font-weight-bolder font-size-h5 text-dark-75 text-hover-primary"
             >
               {user.firstname} {user.lastname}

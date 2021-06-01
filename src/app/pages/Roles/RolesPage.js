@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { toAbsoluteUrl } from "../../_metronic/_helpers";
-import SVG from "react-inlinesvg";
-import ModalCreate from "../../_metronic/_partials/roles/ModalCreate";
-import ModalEdit from "../../_metronic/_partials/roles/ModalEdit";
+import ModalCreate from "../../../_metronic/_partials/roles/ModalCreate";
+import ModalEdit from "../../../_metronic/_partials/roles/ModalEdit";
 import { Form } from "react-bootstrap";
 
 export default function RolesPage() {
@@ -362,7 +360,10 @@ export default function RolesPage() {
             show={showModalCreate}
             handleClose={handleCloseModalCreate}
           />
-          <ModalEdit show={showModalEdit} handleClose={handleCloseModalEdit} />
+          <ModalEdit 
+            show={showModalEdit} 
+            handleClose={handleCloseModalEdit} 
+          />
         </div>
       </div>
     </div>

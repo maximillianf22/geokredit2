@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function InfoWindowCustom4({ handleShowModalOficina}) {
 	return(
@@ -6,7 +6,7 @@ function InfoWindowCustom4({ handleShowModalOficina}) {
       <div className = "col-12">
         <div className="d-flex flex-column font-weight-bold w-100">
             <a
-              href="#"
+              href="!#"
               className="text-dark text-hover-primary text-center font-size-lg font-weight-bold text-nowrap lh-1"
             >
               <b>Parada</b>
