@@ -24,20 +24,6 @@ export const ConfiguracionPage = () => {
         </div>
         <div className="col-md-4 col-6 border bg-white">
           <a
-            href="/simulador"
-            className="d-block py-10 py-md-25 px-5 text-center bg-hover-light border-bottom"
-          >
-            <span className="svg-icon svg-icon-3x svg-icon-success">
-              <i className="fa fa-credit-card fa-2x"></i>
-            </span>
-            <span className="d-block text-dark-75 font-weight-bold font-size-h6 mt-2 mb-1">
-              Simulador
-            </span>
-            <span className="d-block text-dark-50 font-size-lg">Simulador de Creditox</span>
-          </a>
-        </div>
-        <div className="col-md-4 col-6 border bg-white">
-          <a
             href="/parametros"
             className="d-block py-10 py-md-25 px-5 text-center bg-hover-light border-right"
           >
@@ -68,7 +54,7 @@ export const ConfiguracionPage = () => {
             </span>
           </a>
         </div>
-        <div className="col-md-4 col-6 border bg-white">
+        <div className="col-md-6 col-6 border bg-white">
           <a
             href="/informes"
             className="d-block py-10 py-md-25 px-5 text-center bg-hover-light border-right"
@@ -84,7 +70,7 @@ export const ConfiguracionPage = () => {
             </span>
           </a>
         </div>
-        <div className="col-md-4 col-6 border bg-white">
+        <div className="col-md-6 col-6 border bg-white">
           <a
             href="/base-datos"
             className="d-block py-10 py-md-25 px-5 text-center bg-hover-light border-right"

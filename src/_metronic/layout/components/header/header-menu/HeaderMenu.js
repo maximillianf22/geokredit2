@@ -24,14 +24,6 @@ export function HeaderMenu({ layoutProps }) {
 
         {/*begin::Header Nav*/}
         <ul className={`menu-nav ml-5 ${layoutProps.ulClasses}`}>
-            {/*begin::1 Level*/}
-            <li className={`menu-item menu-item-rel ${getMenuItemActive('/dashboard')}`}>
-                <NavLink className="menu-link" to="/dashboard">
-                    <span className="menu-text">Dashboard</span>
-                    {layoutProps.rootArrowEnabled && (<i className="menu-arrow" />)}
-                </NavLink>
-            </li>
-            {/*end::1 Level*/}
 
             {/*begin::1 Level*/}
             <li className={`menu-item menu-item-rel`}>
@@ -46,6 +38,15 @@ export function HeaderMenu({ layoutProps }) {
             <li className={`menu-item menu-item-rel`}>
                 <NavLink className="menu-link" to="/asesor">
                     <span className="menu-text">Asesores</span>
+                    {layoutProps.rootArrowEnabled && (<i className="menu-arrow" />)}
+                </NavLink>
+            </li>
+            {/*end::1 Level*/}
+
+            {/*begin::1 Level*/}
+            <li className={`menu-item menu-item-rel`}>
+                <NavLink className="menu-link" to="/director">
+                    <span className="menu-text">Directores</span>
                     {layoutProps.rootArrowEnabled && (<i className="menu-arrow" />)}
                 </NavLink>
             </li>
@@ -71,8 +72,17 @@ export function HeaderMenu({ layoutProps }) {
 
             {/*begin::1 Level*/}
             <li className={`menu-item menu-item-rel`}>
-                <NavLink className="menu-link" to="/metas">
-                    <span className="menu-text">Metas</span>
+                <NavLink className="menu-link" to="/simulacion">
+                    <span className="menu-text">Simulaciones</span>
+                    {layoutProps.rootArrowEnabled && (<i className="menu-arrow" />)}
+                </NavLink>
+            </li>
+            {/*end::1 Level*/}
+
+             {/*begin::1 Level*/}
+             <li className={`menu-item menu-item-rel`}>
+                <NavLink className="menu-link" to="/visita">
+                    <span className="menu-text">Visitas</span>
                     {layoutProps.rootArrowEnabled && (<i className="menu-arrow" />)}
                 </NavLink>
             </li>
